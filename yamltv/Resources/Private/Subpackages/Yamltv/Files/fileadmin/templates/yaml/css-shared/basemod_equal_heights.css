@@ -1,0 +1,28 @@
+/* "Yet Another Multicolumn Layout" v3.3 (c) by Dirk Jesse (http://www.yaml.de)
+ * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+@media screen, projection
+{
+.example1{margin-bottom:1em}
+.example1 .subc {margin:0 5px;padding:0}
+.example1 .subcl{margin:0 10px 0 0;padding:0}
+.example1 .subcr{margin:0 0 0 10px;padding:0}
+.example1 h3{background:#600;color:#fff;text-transform:uppercase;font-weight:bold;padding:5px 10px;font-size:116.67%}
+.example1 ul{margin:10px 10px 10px 20px}
+.example1 p{margin:10px}
+.example1 .subcl,
+.example1 .subcr,
+.example1 .subc{background:#f0f0f0;color:#666;padding-bottom:100em;margin-bottom:-100em}
+.box-top .c33l,
+.box-top .c33r{background:url("images/lframe.png") top left no-repeat}
+.box-top .subcl,
+.box-top .subcr,
+.box-top .subc{padding:15px;background:url("images/rframe.png") top right no-repeat;padding-bottom:100em;margin-bottom:-100em}
+.box-bottom{margin-bottom:1em;text-align:right}
+.box-bottom .c33l,
+.box-bottom .c33r{background:url("images/lframe.png") bottom left no-repeat}
+.box-bottom .subcl,
+.box-bottom .subcr,
+.box-bottom .subc{padding:0 20px 15px 20px;background:url("images/rframe.png") bottom right no-repeat}
+.box-top h3{display:block;margin:10px 5px 5px 5px;border-bottom:1px #c88 solid;font-style:normal;font-variant:small-caps}
+.box-top p{padding:5px;margin-bottom:0}
+}

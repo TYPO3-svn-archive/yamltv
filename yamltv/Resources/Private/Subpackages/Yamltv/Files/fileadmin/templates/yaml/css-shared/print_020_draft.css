@@ -1,0 +1,11 @@
+/* "Yet Another Multicolumn Layout" v3.3 (c) by Dirk Jesse (http://www.yaml.de)
+ * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+@media print
+{
+body {font-size:10pt}
+#topnav, #nav, #search, nav {display:none}
+h1,h2,h3,h4,h5,h6 {page-break-after:avoid}
+#col1 {display:none}
+#col2, #col2_content {float:none;width:100%;margin:0;padding:0;border:0}
+#col3 {display:none}
+}

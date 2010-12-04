@@ -1,0 +1,25 @@
+/* "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+img{border:0}
+/* Classes Paragraph */
+p.csc-frame-frame1{background:#EDEBF1; border:1px solid #000; padding:5px}
+p.csc-frame-frame2{background:#F5FFAA; border:1px solid #000; padding:5px}
+p.align-center{text-align:center}
+p.align-left{text-align:left}
+p.align-right{text-align:right}
+p.align-justify{text-align:justify}
+p.indent{margin-left:1.5em}
+table.contenttable{font-size:0.8em}
+p sup, p sub{font-size:0.7em}
+p.code{font-family:"Courier New", Courier, monospace; font-size:0.9em; padding:1em; background:#f0f0f4; border:1px #ccd solid}
+p.highlight{color:#c30}
+p.dimmed{color:#888}
+p.info{background:#f2f2f2;color:#666;padding:10px;margin-bottom:0.5em;font-size:91.7%}
+p.note{background:#efe;color:#040;border:2px #484 solid;padding:10px;margin-bottom:1em}
+p.important{background:#ffe;color:#440;border:2px #884 solid;padding:10px;margin-bottom:1em}
+p.warning{background:#fee;color:#400;border:2px #844 solid;padding:10px;margin-bottom:1em}
+/* Classes Character */
+span.underline{text-decoration:underline}
+span.strikethrough{text-decoration:line-through}
+span.mono{font-family:"Courier New", Courier, monospace;padding:0 0.3em 0 0.3em;color:#000088}
+span.file{font-family:"Courier New", Courier, monospace;padding:0 0 0 14px;color:#000088;background:transparent url('images/file.gif') no-repeat left}
+span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;color:#000088;background:transparent url('images/dir.gif') no-repeat left}

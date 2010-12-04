@@ -1,0 +1,59 @@
+/* "Yet Another Multicolumn Layout" v3.3 (c) by Dirk Jesse (http://www.yaml.de)
+ * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+@media screen, projection
+{
+body{overflow-y:scroll}
+body{background:#f9f9f9}
+body{text-align:center}
+.page_margins{text-align:left;margin:0 auto}
+.page_margins{max-width:80em}
+#header, #nav, #main, #footer{overflow:hidden;min-width:720px}
+#header{color:#fff;background:#4d87c7 url("../../images/bg_blue.png") repeat-x top left}
+#header .page{position:relative;padding:45px 2em 1em 20px}
+#topnav{position:absolute;top:10px;right:10px;color:#88a;background:transparent}
+#nav{background:#e8e8e8}
+#main{background:#fff;padding:0}
+.rootlineMenu{margin:0 20px 10px 20px;padding:2px 5px;text-align:right;font-size:87%}
+.rootlineMenu a{text-decoration:underline;padding-right:2px}
+.rootlineMenu a:hover{text-decoration:none}
+.rootlineMenu ul{display:inline;margin:0}
+.rootlineMenu li{display:inline;margin:0;list-style:none;padding:0 2px;color:#880000}
+.rootlineMenu li.last{font-weight:bold;color:#444}
+.rootlineMenu li.first:after{content:" >"}
+.rootlineMenu li.inside:after{content:" >"}
+#footer{color:#666;background:#f9f9f9;border-top:5px #efefef solid;line-height:1.5em}
+#footer .page{padding:10px 20px}
+#col1{width:25%}
+#col1_content{padding:10px 10px 10px 20px}
+#col2{width:25%}
+#col2_content{padding:10px 20px 10px 10px}
+#col3{margin:0 25%}
+#col3_content{padding:10px}
+#nav *{border:0px none !important}
+.hlist{background:#e8e8e8}
+.hlist ul{margin-left:20px}
+.hlist ul li{line-height:1.2em}
+.hlist ul li a,
+.hlist ul li strong{color:#666;font-weight:normal;padding:0.5em 0.8em 0.5em 0.8em}
+.hlist ul li a:focus,
+.hlist ul li a:hover,
+.hlist ul li a:active{background:#182E7A;color:#fff}
+.hlist ul li.active{background:#f8f8f8}
+.hlist ul li.active strong,
+.hlist ul li.active a,
+.hlist ul li.active a:focus,
+.hlist ul li.active a:hover,
+.hlist ul li.active a:active{color:#4D87C7;font-weight:bold}
+#header h1{font-weight:bold;font-size:2.5em;letter-spacing:-2px;line-height:65%;color:#fff}
+#header span{color:#88c}
+#topnav a{color:#ccc;font-weight:normal;background:transparent;text-decoration:none}
+#topnav a:focus,
+#topnav a:hover,
+#topnav a:active{text-decoration:underline;background-color:transparent}
+#footer a{color:#999;background:transparent;font-weight:bold}
+#footer a:focus,
+#footer a:hover,
+#footer a:active{color:#4D87C7;background-color:transparent;text-decoration:underline}
+#skiplinks a.skip:focus,
+#skiplinks a.skip:active{color:#fff;background:#333;border-bottom:1px #000 solid;padding:10px 0;text-decoration:none}
+}

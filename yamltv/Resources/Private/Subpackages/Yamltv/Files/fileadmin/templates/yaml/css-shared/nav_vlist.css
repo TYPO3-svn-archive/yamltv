@@ -1,0 +1,64 @@
+/* "Yet Another Multicolumn Layout" v3.3 (c) by Dirk Jesse (http://www.yaml.de)
+ * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+@media all
+{
+/* title */
+span.vlist{display:block;font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:100%;width:90%;padding:3px 0px 3px 10%;margin:0;color:#444;border-top:2px #ddd solid;border-bottom:4px #888 solid}
+.vlist{width:100%;overflow:hidden;margin:0 0 1.5em 0;list-style-type:none;border-bottom:2px #ddd solid}
+.vlist ul{list-style-type:none;margin:0;padding:0}
+.vlist li{float:left;width:100%;margin:0;padding:0}
+/* DELETE Block, if no background-images are needed */
+.vlist li a{background:url("images/subnode.gif") no-repeat scroll 3% 0.7em transparent}
+.vlist li ul li a{background:url("images/subnode.gif") no-repeat scroll 8% 0.7em transparent}
+.vlist li ul li ul li a{background:url("images/subnode.gif") no-repeat scroll 13% 0.7em transparent}
+.vlist li ul li ul li ul li a{background:url("images/subnode.gif") no-repeat scroll 18% 0.7em transparent}
+.vlist li.hasChild a{background-image:url("images/subnode_plus.gif")}
+.vlist li.hasChildIsActive a{background-image:url("images/subnode_minus.gif")}
+.vlist li.hasChildIsActive ul li a{background-image:url("images/subnode.gif")}
+.vlist li.hasChildIsActive ul li.hasChild a{background-image:url("images/subnode_plus.gif")}
+.vlist li.hasChildIsActive ul li.hasChildIsActive a{background-image:url("images/subnode_minus.gif")}
+.vlist li.hasChildIsActive ul li.hasChildIsActive ul li a{background-image:url("images/subnode.gif")}
+/* END delete Block, if no background-images are needed */
+.vlist a,
+.vlist strong,
+.vlist span{display:block;padding:3px 0px 3px 10%;text-decoration:none;border-bottom:1px #ddd solid}
+.vlist a,
+.vlist a:visited{color:#444}
+.vlist li span{display:block;font-weight:bold;border-bottom:1px #ddd solid}
+/* active list element */
+.vlist li.active{color:#fff;background-color:#494949}
+/* Level 1 */
+.vlist li a,
+.vlist li strong,
+.vlist li span{width:90%;padding-left:10%}
+.vlist li a:focus,
+.vlist li a:hover,
+.vlist li a:active{background-color:#a88;color:#fff;outline: 0 none}
+/* Level 2 */
+.vlist li ul li a,
+.vlist li ul li strong,
+.vlist li ul li span{width:85%;padding-left:15%}
+.vlist li ul li a, 
+.vlist li ul li a:visited{background-color:#f8f8f8;color:#333}
+.vlist li ul li a:focus,
+.vlist li ul li a:hover,
+.vlist li ul li a:active{background-color:#a88;color:#fff}
+/* Level 3 */
+.vlist li ul li ul li a,
+.vlist li ul li ul li strong,
+.vlist li ul li ul li span{width:80%;padding-left:20%}
+.vlist li ul li ul li a,
+.vlist li ul li ul li a:visited{background-color:#f0f0f0;color:#222}
+.vlist li ul li ul li a:focus,
+.vlist li ul li ul li a:hover,
+.vlist li ul li ul li a:active{background-color:#a88;color:#fff}
+/* Level 4 */
+.vlist li ul li ul li ul li a,
+.vlist li ul li ul li ul li strong,
+.vlist li ul li ul li ul li span{width:75%;padding-left:25%}
+.vlist li ul li ul li ul li a,
+.vlist li ul li ul li ul li a:visited{background-color:#e8e8e8;color:#111}
+.vlist li ul li ul li ul li a:focus,
+.vlist li ul li ul li ul li a:hover,
+.vlist li ul li ul li ul li a:active{background-color:#a88;color:#fff}
+}

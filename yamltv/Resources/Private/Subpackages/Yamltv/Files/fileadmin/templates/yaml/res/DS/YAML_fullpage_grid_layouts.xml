@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<field_skiplinks type="array">
+				<tx_templavoila type="array">
+					<title>Skiplinks</title>
+					<description>Map outer to UL id skiplinks</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Skiplinks ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>ul</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.skiplinks</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_skiplinks>
+			<field_sectitle type="array">
+				<tx_templavoila type="array">
+					<title>Secondary website title</title>
+					<description>Map outer to SPAN class secWebsiteTitle</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Secondary website title</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>span</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.secWebsiteTitle</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_sectitle>
+			<field_topnav type="array">
+				<tx_templavoila type="array">
+					<title>Top Navigation</title>
+					<description>Map outer to SPAN class navlinks</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Top Navigation ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>span</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.topNavigation</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_topnav>
+			<field_header type="array">
+				<tx_templavoila type="array">
+					<title>Header</title>
+					<description>Map outer to DIV id header</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Header ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>div</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.header</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_header>
+			<field_rootline type="array">
+				<tx_templavoila type="array">
+					<title>Rootline</title>
+					<description>Map outer to DIV class rootline</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Rootline ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>div</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.rootline</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_rootline>
+			<field_navmain type="array">
+				<tx_templavoila type="array">
+					<title>Main Navigation</title>
+					<description>Map outer to DIV id nav</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Main Navigation ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>div</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.navMain</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_navmain>
+			<field_navsub type="array">
+				<tx_templavoila type="array">
+					<title>Sub Navigation</title>
+					<description>Map inner to the DIV that should hold the subnavigation</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Sub Navigation ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>div</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.navSub</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_navsub>
+			<field_footer type="array">
+				<tx_templavoila type="array">
+					<title>Footer</title>
+					<description>Map outer to DIV id footer</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Footer ]</numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<tags>div</tags>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.footer</TypoScriptObjPath>
+				</tx_templavoila>
+			</field_footer>
+			<field_belowmenu type="array">
+				<tx_templavoila type="array">
+					<title>Special content</title>
+					<description>Map outer to DIV class belowMenu</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Special content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[1 = COA
+1 {
+  stdWrap.required = 1
+  stdWrap.wrap = <div class="subcl belowMenu"><!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end--></div>
+  10= RECORDS
+  10.source.current=1
+  10.tables = tt_content
+}
+]]></TypoScript>
+					<preview></preview>
+					<enableDragDrop>0</enableDragDrop>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<oldStyleColumnNumber>3</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Special content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_belowmenu>
+			<field_maincontent type="array">
+				<tx_templavoila type="array">
+					<title>Main content</title>
+					<description>Map inner to the DIV that should hold the main content</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Main content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[10= RECORDS
+10.source.current=1
+10.tables = tt_content
+10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->]]></TypoScript>
+					<preview></preview>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Main content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_maincontent>
+			<field_sidecontent type="array">
+				<tx_templavoila type="array">
+					<title>Side content</title>
+					<description>Map inner to the DIV that should hold the side content (OPTIONAL)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Side content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[10= RECORDS
+10.source.current=1
+10.tables = tt_content
+10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->]]></TypoScript>
+					<preview></preview>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Side content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_sidecontent>
+			<field_exleft type="array">
+				<tx_templavoila type="array">
+					<title>Left ext content</title>
+					<description>Map inner to the DIV that should hold the extended left content (OPTIONAL)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Extended left ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript>10= RECORDS
+10.source.current=1
+10.tables = tt_content</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Left ext content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_exleft>
+			<field_exmiddle type="array">
+				<tx_templavoila type="array">
+					<title>Middle ext content</title>
+					<description>Map inner to the DIV that should hold the extended middle content (OPTIONAL)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Extended middle ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript>10= RECORDS
+10.source.current=1
+10.tables = tt_content</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Middle ext content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_exmiddle>
+			<field_exright type="array">
+				<tx_templavoila type="array">
+					<title>Right ext content</title>
+					<description>Map inner to the DIV that should hold the extended right content (OPTIONAL)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Extended right ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript>10= RECORDS
+10.source.current=1
+10.tables = tt_content</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Right ext content</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_exright>
+		</el>
+	</ROOT>
+</T3DataStructure>

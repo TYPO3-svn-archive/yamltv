@@ -1,0 +1,31 @@
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Variation of screen layout (basemod.css) - non-graphical vertical lines between columns "3col_column_dividers"
+ * (de) Variation des Screenlayouts (basemod.css) - Grafikfreie Spaltentrennlinien "3col_column_dividers"
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3
+ * @revision        $Revision: 466 $
+ * @lastmodified    $Date: 2010-09-14 21:19:30 +0200 (Di, 14 Sep 2010) $
+ */
+
+@media screen, projection
+{
+  #col3 {
+    border-left: 2px #ddd dotted;
+    border-right: 2px #ddd dotted;
+  }
+  .rootlineMenu {margin-bottom:10px;padding:2px 0;text-align:right;font-size:87%}
+  .rootlineMenu a {text-decoration:underline;padding-right:2px}
+  .rootlineMenu a:hover {text-decoration:none}
+  .rootlineMenu ul {display:inline;margin:0}
+  .rootlineMenu li {display:inline;margin:0;list-style:none;padding:0 2px;color:#880000}
+  .rootlineMenu li.last {font-weight:bold;color:#444}
+  .rootlineMenu li.first:after {content:" >"}
+  .rootlineMenu li.inside:after {content:" >"}
+}

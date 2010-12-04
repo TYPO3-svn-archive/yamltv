@@ -1,0 +1,248 @@
+/* "Yet Another Multicolumn Layout" v3.3 (c) by Dirk Jesse (http://www.yaml.de)
+ * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+@media all
+{
+/* (en) reset font size for all elements to standard (16 Pixel) */
+/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+html * {font-size:100.01%}
+textarea, pre, code, kbd, samp, var, tt{font-family:Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier}
+/* (en) base layout gets standard font size 12px */
+/* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
+body{font-family:Arial, Helvetica, sans-serif;font-size:75.00%;color:#444}
+/*---Headings | Überschriften---*/
+h1,h2,h3,h4,h5,h6{font-family:Georgia, "Times New Roman", Times, serif;font-weight:normal;color:#222;margin:0 0 0.25em 0}
+h1{font-size:250%} /* 30px */
+h2{font-size:200%} /* 24px */
+h3{font-size:150%} /* 18px */
+h4{font-size:133.33%} /* 16px */
+h5{font-size:116.67%} /* 14px */
+h6{font-size:116.67%} /* 14px */
+/*---Lists | Listen---*/
+ul, ol, dl{line-height:1.5em;margin:0 0 1em 1em}
+ul{list-style-type:disc}
+ul ul{list-style-type:circle;margin-bottom:0}
+ol{list-style-type:decimal}
+ol ol{list-style-type:lower-latin;margin-bottom:0}
+li{margin-left:0.8em;line-height:1.5em}
+dt{font-weight:bold}
+dd{margin:0 0 1em 0.8em}
+/*---general text formatting | Allgemeine Textauszeichnung---*/
+p{line-height:1.5em;margin:0 0 1em 0}
+blockquote, cite, q{font-family:Georgia, "Times New Roman", Times, serif;font-style:italic}
+blockquote{margin:0 0 1em 1.6em;color:#666}
+strong,b{font-weight:bold}
+em,i{font-style:italic}
+big{font-size:116.667%}
+small{font-size:91.667%}
+pre{line-height:1.5em;margin:0 0 1em 0}
+pre, code, kbd, tt, samp, var{font-size:100%}
+pre, code{color:#800}
+kbd, samp, var, tt{color:#666;font-weight:bold}
+var, dfn{font-style:italic}
+acronym, abbr{border-bottom:1px #aaa dotted;font-variant:small-caps;letter-spacing:.07em;cursor:help}
+sub{vertical-align:sub;font-size:smaller}
+sup{vertical-align:super;font-size:smaller}
+hr{color:#fff;background:transparent;margin:0 0 0.5em 0;padding:0 0 0.5em 0;border:0;border-bottom:1px #eee solid}
+/*---Links---*/
+a{color:#4D87C7;background:transparent;text-decoration:none}
+a:visited{color:#036}
+/* (en) maximum constrast for tab focus - change with great care */
+/* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+a:focus{text-decoration:underline;color:#000;background:#fff;outline:1px #f93 solid}
+a:hover,
+a:active{color:#182E7A;text-decoration:underline;outline:0 none}
+/*---images (with optional captions) | Bilder (mit optionaler Bildunterschrift)---*/
+p.icaption_left{float:left;display:inline;margin:0 1em 0.15em 0}
+p.icaption_right{float:right;display:inline;margin:0 0 0.15em 1em}
+p.icaption_left img,
+p.icaption_right img{padding:0;border:1px #888 solid}
+p.icaption_left strong,
+p.icaption_right strong{display:block;overflow:hidden;margin-top:2px;padding:0.3em 0.5em;background:#eee;font-weight:normal;font-size:91.667%}
+/* (en) standard classes for positioning and highlighting */
+/* (de) Standardklassen zur Positionierung und Hervorhebung */
+.highlight{color:#c30}
+.dimmed{color:#888}
+.info{background:#f2f2f2;color:#666;padding:10px;margin-bottom:0.5em;font-size:91.7%}
+.note{background:#efe;color:#040;border:2px #484 solid;padding:10px;margin-bottom:1em}
+.important{background:#ffe;color:#440;border:2px #884 solid;padding:10px;margin-bottom:1em}
+.warning{background:#fee;color:#400;border:2px #844 solid;padding:10px;margin-bottom:1em}
+.float_left{float:left;display:inline;margin-right:1em;margin-bottom:0.15em}
+.float_right{float:right;display:inline;margin-left:1em;margin-bottom:0.15em}
+.center{display:block;text-align:center;margin:0.5em auto}
+.align-center{text-align:center}
+.align-right{text-align:right}
+.indent{margin-left:2em}
+/* (en) Generic classes for table-width and design definition */
+/* (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen */
+table{width:auto;border-collapse:collapse;margin-bottom:0.5em;border-top:2px #888 solid;border-bottom:2px #888 solid}
+table caption{font-variant:small-caps}
+table.full{width:100%}
+table.fixed{table-layout:fixed}
+th,td{padding:0.5em}
+thead th{color:#000;border-bottom:2px #800 solid}
+tbody th{background:#e0e0e0;color:#333}
+tbody th[scope="row"], tbody th.sub{background:#f0f0f0}
+tbody th{border-bottom:1px solid #fff;text-align:left}
+tbody td{border-bottom:1px solid #eee}
+tbody tr:hover th[scope="row"],
+tbody tr:hover tbody th.sub{background:#f0e8e8}
+tbody tr:hover td{background:#fff8f8}
+table.contenttable{width:100%}
+/* ------------------------------------------------------------------------------------------------- */
+/* TYPO3 */
+/* default styles for extension "tx_cssstyledcontent" */
+/* Instead of markup text-pic-clear !! */
+div.csc-textpic{display:table;width:100%}
+/* Captions */
+div.csc-textpic-caption-c .csc-textpic-caption{text-align:center}
+div.csc-textpic-caption-r .csc-textpic-caption{text-align:right}
+div.csc-textpic-caption-l .csc-textpic-caption{text-align:left}
+/* Needed for noRows setting */
+div.csc-textpic div.csc-textpic-imagecolumn{float:left;display:inline}
+/* Border just around the image */
+div.csc-textpic-border div.csc-textpic-imagewrap .csc-textpic-image img,
+div.csc-textpic-border div.csc-textpic-single-image img{border:1px solid #222;padding:0px 0px}
+div.csc-textpic-imagewrap{padding:0}
+div.csc-textpic img{border:0 none}
+/* div:This will place the images side by side */
+div.csc-textpic div.csc-textpic-imagewrap div.csc-textpic-image{float:left}
+/* UL:This will place the images side by side */
+div.csc-textpic div.csc-textpic-imagewrap ul{list-style:none;margin:0;padding:0}
+div.csc-textpic div.csc-textpic-imagewrap ul li{float:left;margin:0;padding:0}
+/* DL:This will place the images side by side */
+div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image{float:left}
+div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dt{float:none}
+div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dd{float:none;line-height:1.2em;padding-top:3px}
+div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dd img{border:none} /* FE-Editing Icons */
+dl.csc-textpic-image{margin:0}
+dl.csc-textpic-image DT{margin:0;display:inline}
+dl.csc-textpic-image DD{margin:0}
+/* Margins around images:*/
+/* Pictures on left, add margin on right */
+div.csc-textpic-left div.csc-textpic-imagewrap .csc-textpic-image,
+div.csc-textpic-intext-left-nowrap div.csc-textpic-imagewrap .csc-textpic-image,
+div.csc-textpic-intext-left div.csc-textpic-imagewrap .csc-textpic-image{display:inline;margin-right:10px}
+/* Pictures on right, add margin on left */
+div.csc-textpic-right div.csc-textpic-imagewrap .csc-textpic-image,
+div.csc-textpic-intext-right-nowrap div.csc-textpic-imagewrap .csc-textpic-image,
+div.csc-textpic-intext-right div.csc-textpic-imagewrap .csc-textpic-image{display:inline;margin-left:10px}
+/* Pictures centered, add margin on left */
+div.csc-textpic-center div.csc-textpic-imagewrap .csc-textpic-image{display:inline;margin-left:10px}
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-image .csc-textpic-caption{margin:0;font-size:91.7%;color:#999}
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-image img{margin:0;vertical-align:bottom}
+/* Space below each image (also in-between rows) */
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-image{margin-bottom:5px}
+div.csc-textpic-equalheight div.csc-textpic-imagerow{margin-bottom:5px;display:block}
+div.csc-textpic div.csc-textpic-imagerow{clear:both}
+div.csc-textpic div.csc-textpic-single-image img{margin-bottom:5px;margin-top:4px}
+/* IE7 hack for margin between image rows */	
+*+html div.csc-textpic div.csc-textpic-imagerow .csc-textpic-image{margin-bottom:0}
+*+html div.csc-textpic div.csc-textpic-imagerow{margin-bottom:5px}
+/* No margins around the whole image-block */
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-firstcol{margin-left:0px !important}
+div.csc-textpic div.csc-textpic-imagewrap .csc-textpic-lastcol{margin-right:0px !important}
+/* Add margin from image-block to text (in case of "Text w/ images") */
+div.csc-textpic-intext-left div.csc-textpic-imagewrap,
+div.csc-textpic-intext-left-nowrap div.csc-textpic-imagewrap{margin-right:10px !important}
+div.csc-textpic-intext-right div.csc-textpic-imagewrap,
+div.csc-textpic-intext-right-nowrap div.csc-textpic-imagewrap{margin-left:10px !important}
+/* Positioning of images:*/
+/* Above */
+div.csc-textpic-above div.csc-textpic-text{clear:both}
+/* Center (above or below) */
+div.csc-textpic-center{text-align:center;/* IE-hack */}
+div.csc-textpic-center div.csc-textpic-imagewrap{margin:0 auto}
+div.csc-textpic-center div.csc-textpic-imagewrap .csc-textpic-image{text-align:left;/* Remove IE-hack */}
+div.csc-textpic-center div.csc-textpic-text{text-align:left;/* Remove IE-hack */}
+/* Right (above or below) */
+div.csc-textpic-right div.csc-textpic-imagewrap{float:right}
+div.csc-textpic-right div.csc-textpic-text{clear:right}
+/* Left (above or below) */
+div.csc-textpic-left div.csc-textpic-imagewrap{float:left}
+div.csc-textpic-left div.csc-textpic-text{clear:left}
+/* Left (in text) */
+div.csc-textpic-intext-left div.csc-textpic-imagewrap{float:left}
+/* Right (in text) */
+div.csc-textpic-intext-right div.csc-textpic-imagewrap{float:right}
+/* Right (in text, no wrap around) */
+div.csc-textpic-intext-right-nowrap div.csc-textpic-imagewrap{float:right;clear:both}
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html div.csc-textpic-intext-right-nowrap .csc-textpic-text{height:1%}
+/* End hide from IE5/mac */
+/* Left (in text, no wrap around) */
+div.csc-textpic-intext-left-nowrap div.csc-textpic-imagewrap{float:left;clear:both}
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html div.csc-textpic-intext-left-nowrap .csc-textpic-text,
+* html .csc-textpic-intext-left ol,
+* html .csc-textpic-intext-left ul{height:1%}
+/* End hide from IE5/mac */
+div.csc-textpic div.csc-textpic-imagerow-last{margin-bottom:0}
+/* Browser fixes:*/
+/* Fix for unordered and ordered list with image "In text, left" */
+.csc-textpic-intext-left ol, .csc-textpic-intext-left ul{padding-left:40px;overflow:auto}
+.csc-frame-rulerBefore{border-top:1px solid #ccc}
+.csc-frame-rulerAfter{border-bottom:1px solid #ccc}
+.csc-frame-indent{padding-left:100px}
+.csc-frame-indent3366{padding-left:33%}
+.csc-frame-indent6633{padding-right:33%}
+.csc-frame-frame1{color:#353535;background-color:#F2F2F2;padding:1em;margin-bottom:2em}
+.csc-frame-frame2{background-color:#E5E5E5;padding:1em;margin-bottom:2em}
+/* END default styles for extension "tx_cssstyledcontent" */
+/* For start page only! */
+p.gettingStartedStepOne{background:url("images/step1.png") no-repeat scroll left center transparent;padding-left:55px;margin:3em 0}
+p.gettingStartedStepTwo{background:url("images/step2.png") no-repeat scroll left center transparent;padding-left:55px;margin:3em 0 2em 20px}
+p.gettingStartedStepThree{background:url("images/step3.png") no-repeat scroll left center transparent;padding-left:55px;margin:3em 0 2em 40px}
+p.gettingStartedStepThree a{background:url("images/button_logintotypo3.png") no-repeat scroll left top #F18F0B;display:block;height:55px;width:242px;text-indent:-9999px}
+p.gettingStartedStepThree a:hover{background-position:0 -56px;background-color:#E88A0E}
+p.gettingStartedStepThree a:focus{outline:0 none}
+p.gettingStartedStepFurtherReading{margin:3em 0 2em 85px}
+/* #page2 #main .page_margins .page{background:url("images/flower_mask2.png") no-repeat scroll left bottom #F18F0B}
+#page2 #main{background-color:#EAEAEA} */
+/* Frame "Infobox" */
+.infobox{font-size:91.7%;border:1px solid #CFCECF;padding:0 10px 5px;background-color:#F2F2F2;margin-bottom:1.5em}
+.infobox h2{font-size:150%;margin:0 -10px .75em -10px;padding:6px 10px;color:white;background-color:#494949}
+
+span.underline{text-decoration:underline}
+span.strikethrough{text-decoration:line-through}
+span.mono{font-family:"Courier New", Courier, monospace;padding:0 0.3em 0 0.3em;color:#000088}
+span.file{font-family:"Courier New", Courier, monospace;padding:0 0 0 14px;color:#000088;background:transparent url('images/file.gif') no-repeat left}
+span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;color:#000088;background:transparent url('images/dir.gif') no-repeat left}
+
+#mailform{background:#f4f4f4;border:1px #ddd solid;margin:0 0 1em 0;padding:10px}
+#mailform fieldset{border:1px #ddd solid;background:#fafafa;margin:0 0 1em 0;padding:0.5em}
+#mailform input.input-mailform,
+#mailform textarea,
+#mailform select{padding:2px;width:73%;border:1px solid #ddd}
+#mailform input.input-mailform:focus,
+#mailform textarea:focus,
+#mailform select:focus{border:1px solid #a66}
+#mailform input.checkbox-mailform,
+#mailform input.radiobutton-mailform{padding:0;margin:0 .4em .4em 0;width:auto;position:relative}
+#mailform input.submit-mailform{margin:0 0 0 22%;width:auto;background:url("images/button_gray.png") repeat-x scroll left top #454545;padding:5px 1em;border-color:#ddd #444 #444 #ddd;border-style:solid;border-width:1px;cursor:pointer;color:#000}
+#mailform input.submit-mailform:hover{background:none repeat-x scroll left top #555;border-color:#444 #ddd #ddd #444;color:#fff}
+#mailform legend{font-size:125%;font-weight:normal}
+#mailform label{color:#666;display:block;float:left;width:20%;font-size:90%;text-align:right;margin:0 1em 0 0}
+#mailform fieldset div fieldset legend{display:none}
+#mailform fieldset div fieldset label{display:inline-table;float:none;width:auto}
+#mailform .csc-mailform-field{margin:0 0 2em 0;clear:both}
+/* Searchbox */
+#searchBox{margin:0 0 1.5em 0}
+#searchBox fieldset{border:0 none;padding:0;margin:0}
+#searchBox input#inputText{width:72%;padding:2px 2px 1px 20px;margin:0;background:url("images/search.png") no-repeat scroll 2px 1px #f2f2f2;border:1px solid #666}
+#searchBox input#inputButton{width:20px;float:right;vertical-align:top}
+#searchBox input#inputText:focus{border:1px dotted #666;background:url("images/search.png") no-repeat scroll -2px -60px #fff}
+/* JS JumpMenu */
+#jumpMenu{margin:0 0 1.5em 0}
+#jumpMenu select{font-size:90%;cursor:pointer;width:100%;margin:0 0 .5em 0;border:0 none;background-color:#f4f4f4}
+#jumpMenu select option{padding-bottom:2px}
+#jumpMenu select option[selected="selected"]{font-weight:bold}
+#jumpMenu #level2 select{padding-left:5%;background-color:#e3e3e3}
+#jumpMenu #level2 select option{}
+#jumpMenu #level3 select{padding-left:10%;background-color:#ccc}
+#jumpMenu #level3 select option{}
+#jumpMenu #level4 select{padding-left:15%;background-color:#b4b4b4}
+#jumpMenu #level4 select option{}
+/* DO NOT delete the last line!! */
+
+
+}

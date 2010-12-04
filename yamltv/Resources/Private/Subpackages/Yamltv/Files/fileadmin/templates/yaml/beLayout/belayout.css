@@ -1,0 +1,16 @@
+.nobr {white-space:normal}
+.tvContentWrap {width:100%}
+.tvPropertyPreview {display:none}
+.fceTypeHeader {background-color:#a1a5a7;color:white;margin:0;text-align:center;font-size:14px}
+.tvColumnWrap {background-color:#e1e3e5;margin:0;paddng:0}
+.tvColumnWrap .tvColumnWrap {background-color:#bfbfbf}
+.tvElementEditWrap {display:block;height:40px;line-height:13px;overflow:hidden}
+.tvElementTitleBar .tvElementEditWrap {display:inline;height:auto}
+.tvElementTitleBar {background-color:#797d80}
+.tvContent .tvElementTitleBar {background-color:green}
+.tvElementTitleBar td {color:white;font-weight:bold}
+#tvContentOuterWrap {margin:10px}
+.tvContentTab {float:left;background-color:#CACACA;padding:4px 0 2px;width:130px;margin:0 4px 0 0;font-size:11px;color:#666;text-align:center;cursor:pointer}
+#tvTabBase {height:10px;background-color:#5F5F5F;clear:both}
+.tvContent {background-color:white;border:1px solid #2C61B9;clear:both}
+.tvContentTab.current {background-color:#5F5F5F;color:white;cursor:auto}

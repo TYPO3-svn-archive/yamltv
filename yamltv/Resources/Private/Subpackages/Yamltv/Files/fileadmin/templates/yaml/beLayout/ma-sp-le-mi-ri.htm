@@ -1,0 +1,144 @@
+<link rel="stylesheet" type="text/css" href="../../../../fileadmin/templates/yaml/beLayout/belayout.css" />
+<div id="tvContentOuterWrap">
+	<div id="tvMainContentTab" class="tvContentTab">
+    Main content
+  </div>
+  <div id="tvFeatureContentTab" class="tvContentTab">
+    Special content
+  </div>
+  <div id="tvExtendedLeftTab" class="tvContentTab">
+    Ext. content left
+  </div>
+  <div id="tvExtendedMiddleTab" class="tvContentTab">
+    Ext. content middle
+  </div>
+  <div id="tvExtendedRightTab" class="tvContentTab">
+    Ext. content right
+  </div>
+  <div id="tvTabBase">&nbsp;</div>
+  <div id="tvMainContent" class="tvContent">
+    ###field_maincontent###
+  </div>
+  <div id="tvFeatureContent" class="tvContent">
+    ###field_belowmenu###
+  </div>
+  <div id="tvExtendedLeftContent" class="tvContent">
+    ###field_exleft###
+  </div>
+  <div id="tvExtendedMiddleContent" class="tvContent">
+    ###field_exmiddle###
+  </div>
+  <div id="tvExtendedRightContent" class="tvContent">
+    ###field_exright###
+  </div>
+</div>
+<script type="text/javascript">
+function getCookie( name ) {
+	var start = document.cookie.indexOf( name + "=" );
+	var len = start + name.length + 1;
+	if ( ( !start ) && ( name != document.cookie.substring( 0, name.length ) ) ) {
+		return null;
+	}
+	if ( start == -1 ) return null;
+	var end = document.cookie.indexOf( ';', len );
+	if ( end == -1 ) end = document.cookie.length;
+	return unescape( document.cookie.substring( len, end ) );
+}
+
+function setCookie( name, value, expires, path, domain, secure ) {
+	var today = new Date();
+	today.setTime( today.getTime() );
+	if ( expires ) {
+		expires = expires * 1000 * 60 * 60 * 24;
+	}
+	var expires_date = new Date( today.getTime() + (expires) );
+	document.cookie = name+'='+escape( value ) +
+		( ( expires ) ? ';expires='+expires_date.toGMTString() : '' ) + //expires.toGMTString()
+		( ( path ) ? ';path=' + path : '' ) +
+		( ( domain ) ? ';domain=' + domain : '' ) +
+		( ( secure ) ? ';secure' : '' );
+}
+
+function deleteCookie( name, path, domain ) {
+	if ( getCookie( name ) ) document.cookie = name + '=' +
+			( ( path ) ? ';path=' + path : '') +
+			( ( domain ) ? ';domain=' + domain : '' ) +
+			';expires=Thu, 01-Jan-1970 00:00:01 GMT';
+}
+
+function tvMainContent(event) {
+	$$('.tvContentTab').invoke('removeClassName', 'current');
+	$('tvMainContentTab').addClassName('current');
+	$$('.tvContent').invoke('hide');
+	$$('#tvMainContent').invoke('show');
+	setCookie ("tvActiveTab","tvMainContentTab");
+}
+
+function tvFeatureContent(event) {
+	$$('.tvContentTab').invoke('removeClassName', 'current');
+	$('tvFeatureContentTab').addClassName('current');
+	$$('.tvContent').invoke('hide');
+	$$('#tvFeatureContent').invoke('show');
+	setCookie ("tvActiveTab","tvFeatureContentTab");
+}
+
+function tvExtendedLeftContent(event) {
+	$$('.tvContentTab').invoke('removeClassName', 'current');
+	$('tvExtendedLeftTab').addClassName('current');
+	$$('.tvContent').invoke('hide');
+	$$('#tvExtendedLeftContent').invoke('show');
+	setCookie ("tvActiveTab","tvExtendedLeftTab");
+}
+
+function tvExtendedMiddleContent(event) {
+	$$('.tvContentTab').invoke('removeClassName', 'current');
+	$('tvExtendedMiddleTab').addClassName('current');
+	$$('.tvContent').invoke('hide');
+	$$('#tvExtendedMiddleContent').invoke('show');
+	setCookie ("tvActiveTab","tvExtendedMiddleTab");
+}
+
+function tvExtendedRightContent(event) {
+	$$('.tvContentTab').invoke('removeClassName', 'current');
+	$('tvExtendedRightTab').addClassName('current');
+	$$('.tvContent').invoke('hide');
+	$$('#tvExtendedRightContent').invoke('show');
+	setCookie ("tvActiveTab","tvExtendedRightTab");
+}
+					
+if (getCookie("tvActiveTab") != null) {
+	if (getCookie("tvCurrentPage") != top.fsMod.recentIds["web"]) {
+		setCookie ("tvActiveTab","tvMainContentTab");
+		setCookie ("tvCurrentPage",top.fsMod.recentIds["web"]);
+	}
+}
+else {
+	setCookie ("tvActiveTab","tvMainContentTab");
+	setCookie ("tvCurrentPage",top.fsMod.recentIds["web"]);
+}
+
+$(getCookie("tvActiveTab")).addClassName('current');
+$$('.tvContent').invoke('hide');
+
+if (getCookie("tvActiveTab") == "tvFeatureContentTab") {
+	$$('#tvFeatureContent').invoke('show');
+}
+else if (getCookie("tvActiveTab") == "tvExtendedLeftTab") {
+	$$('#tvExtendedLeftContent').invoke('show');
+}
+else if (getCookie("tvActiveTab") == "tvExtendedMiddleTab") {
+	$$('#tvExtendedMiddleContent').invoke('show');
+}
+else if (getCookie("tvActiveTab") == "tvExtendedRightTab") {
+	$$('#tvExtendedRightContent').invoke('show');
+}
+else {
+	$$('#tvMainContent').invoke('show');
+}
+
+$('tvMainContentTab').observe('click', tvMainContent);
+$('tvFeatureContentTab').observe('click', tvFeatureContent);
+$('tvExtendedLeftTab').observe('click', tvExtendedLeftContent);
+$('tvExtendedMiddleTab').observe('click', tvExtendedMiddleContent);
+$('tvExtendedRightTab').observe('click', tvExtendedRightContent);
+</script>
