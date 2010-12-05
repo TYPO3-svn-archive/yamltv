@@ -3,10 +3,10 @@ TABLES="be_groups be_users_shadow fe_groups fe_users index_fulltext index_grlist
 
 # Tables which have a field deleted. Used to clean up deleted records before exporting
 CLEANUP_TABLES="be_groups be_users_shadow fe_groups fe_users pages pages_language_overlay sys_filemounts sys_news sys_refindex sys_template tt_content tt_news tt_news_cat"
-DATABASE=sql2yamltv
+DATABASE=typo3
 OUTPUTFILE=yamltv.sql
-USER=sqlu2yamltv
-PASSWORD=ratpratan007
+USER=dbuser
+PASSWORD=password
 
 # Only dump the backend users we need
 mysql -u ${USER} --password=${PASSWORD} ${DATABASE} -e 'DROP TABLE IF EXISTS be_users_shadow; CREATE TABLE be_users_shadow SELECT * FROM be_users WHERE uid IN(2,3,4); ALTER TABLE be_users_shadow ADD PRIMARY KEY (uid), ADD KEY parent (pid), ADD KEY username (username);ALTER TABLE be_users_shadow CHANGE uid uid INT(11) unsigned NOT NULL auto_increment;'
