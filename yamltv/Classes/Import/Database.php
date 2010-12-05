@@ -60,7 +60,7 @@ class tx_yamltv_import_database {
 	 * @return void
 	 */
 	public function setSubpackage($subpackage) {
-		$this->sqlLocation = 'Resources/Private/Subpackages/' . $subpackage . '/Database/yamltv.sql';
+		$this->sqlLocation = 'Resources/Private/Subpackages/' . $subpackage . '/Database/' . $subpackage . '.sql';
 	}
 
 	/**
