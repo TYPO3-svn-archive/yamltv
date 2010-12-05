@@ -1,0 +1,8 @@
+The following extensions and versions are available:
+static_info_tables: 2.1.2
+templavoila: 1.5.2
+realurl: 1.10.1
+tt_news: 3.0.1
+wt_spamshield: 0.7.0
+feeditadvanced: 1.4.0
+jquerycolorbox: 0.0.0
