@@ -179,7 +179,7 @@
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
-					<oldStyleColumnNumber>3</oldStyleColumnNumber>
+					<oldStyleColumnNumber>2</oldStyleColumnNumber>
 				</tx_templavoila>
 				<TCEforms type="array">
 					<label>Special content</label>
@@ -250,7 +250,7 @@
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>1</oldStyleColumnNumber>
 					<enableDragDrop>0</enableDragDrop>
 				</tx_templavoila>
 				<TCEforms type="array">
@@ -276,16 +276,18 @@
 					</sample_data>
 					<eType>ce</eType>
 					<tags>div</tags>
-					<TypoScript>10= RECORDS
+					<TypoScript><![CDATA[10= RECORDS
 10.source.current=1
-10.tables = tt_content</TypoScript>
+10.tables = tt_content
+10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->]]></TypoScript>
+					<preview></preview>
 					<proc type="array">
 						<int>0</int>
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
 					<preview></preview>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>3</oldStyleColumnNumber>
 					<enableDragDrop>0</enableDragDrop>
 				</tx_templavoila>
 				<TCEforms type="array">
@@ -311,16 +313,18 @@
 					</sample_data>
 					<eType>ce</eType>
 					<tags>div</tags>
-					<TypoScript>10= RECORDS
+					<TypoScript><![CDATA[10= RECORDS
 10.source.current=1
-10.tables = tt_content</TypoScript>
+10.tables = tt_content
+10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->]]></TypoScript>
+					<preview></preview>
 					<proc type="array">
 						<int>0</int>
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
 					<preview></preview>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>4</oldStyleColumnNumber>
 					<enableDragDrop>0</enableDragDrop>
 				</tx_templavoila>
 				<TCEforms type="array">
@@ -346,16 +350,18 @@
 					</sample_data>
 					<eType>ce</eType>
 					<tags>div</tags>
-					<TypoScript>10= RECORDS
+					<TypoScript><![CDATA[10= RECORDS
 10.source.current=1
-10.tables = tt_content</TypoScript>
+10.tables = tt_content
+10.wrap = <!--TYPO3SEARCH_begin--> | <!--TYPO3SEARCH_end-->]]></TypoScript>
+					<preview></preview>
 					<proc type="array">
 						<int>0</int>
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
 					<preview></preview>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>5</oldStyleColumnNumber>
 					<enableDragDrop>0</enableDragDrop>
 				</tx_templavoila>
 				<TCEforms type="array">

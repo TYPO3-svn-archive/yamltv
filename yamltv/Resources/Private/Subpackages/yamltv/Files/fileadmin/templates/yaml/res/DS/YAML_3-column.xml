@@ -138,7 +138,7 @@
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>2</oldStyleColumnNumber>
 				</tx_templavoila>
 				<TCEforms type="array">
 					<label>Special content</label>
@@ -157,7 +157,7 @@
 			<field_maincontent type="array">
 				<tx_templavoila type="array">
 					<title>Main content</title>
-					<description>Map inner to DIV id col3_content</description>
+					<description>Map inner to the DIV that should hold the main content</description>
 					<sample_data type="array">
 						<numIndex index="0">[ Main content ]</numIndex>
 					</sample_data>
@@ -193,7 +193,7 @@
 			<field_sidecontent type="array">
 				<tx_templavoila type="array">
 					<title>Side content</title>
-					<description>Map inner to DIV id col2_content</description>
+					<description>Map inner to the DIV that should hold the side content (OPTIONAL)</description>
 					<sample_data type="array">
 						<numIndex index="0">[ Side content ]</numIndex>
 					</sample_data>
@@ -209,7 +209,7 @@
 						<HSC>0</HSC>
 						<stdWrap></stdWrap>
 					</proc>
-					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<oldStyleColumnNumber>1</oldStyleColumnNumber>
 					<enableDragDrop>0</enableDragDrop>
 				</tx_templavoila>
 				<TCEforms type="array">
