@@ -7,4 +7,4 @@
 @import url(screen/basemod_liquid_faux_columns.css);
 @import url(../../../css-shared/content.css);
 /* import print layout | Druck-Layout einbinden */
-@import url(../../../yaml/print/print_003_draft.css);
+@import url(../../../css-shared/print_003.css);
