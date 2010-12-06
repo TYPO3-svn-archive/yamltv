@@ -243,6 +243,47 @@ span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;
 #jumpMenu #level4 select{padding-left:15%;background-color:#b4b4b4}
 #jumpMenu #level4 select option{}
 /* DO NOT delete the last line!! */
+/* Color 1 (blue by default) */
+.REboxColor1Content{overflow:hidden}
+.REboxColor1{display:block;margin-bottom:1em}
+.REboxColor1 p{}
+.REboxColor1Content{display:block;background:#C8DDF3;border-left:1px solid #AABCCE;border-right:1px solid #AABCCE;padding:0.5em 1em 0.5em 1em;height:1%;overflow:hidden}
+.rBline1, .rBline2, .rBline3, .rBline4{display:block;overflow:hidden;font-size:1px}
+.rBline1, .rBline2, .rBline3{height:1px}
+.rBline2, .rBline3, .rBline4{background:#C8DDF3;border-left:1px solid #AABCCE;border-right:1px solid #AABCCE}
+.rBline1{margin:0 5px;background:#AABCCE}
+.rBline2{margin:0 3px;border-width:0 2px 0 2px}
+.rBline3{margin:0 2px}
+.rBline4{height:2px;margin:0 1px 0 1px}
+/* Color 2 (green by default */
+.REboxColor2Content{overflow:hidden}
+.REboxColor2 {display:block;margin-bottom:1em}
+.REboxColor2 p{}
+.REboxColor2Content{display:block;background:#dfd;border-left:1px solid #bdb;border-right:1px solid #bdb;padding:0.5em 1em 0.5em 1em}
+.rGline1, .rGline2, .rGline3, .rGline4{display:block;overflow:hidden;font-size:1px}
+.rGline1, .rGline2, .rGline3{height:1px}
+.rGline2, .rGline3, .rGline4{background:#dfd;border-left:1px solid #bdb;border-right:1px solid #bdb}
+.rGline1{margin:0 5px;background:#bdb}
+.rGline2{margin:0 3px;border-width:0 2px 0 2px}
+.rGline3{margin:0 2px}
+.rGline4{height:2px;margin:0 1px 0 1px}
+/* Color 3 (red by default */
+.REboxColor3Content{overflow:hidden}
+.REboxColor3{display:block;margin-bottom:1em}
+.REboxColor3 p{}
+.REboxColor3Content{display:block;background:#fdd;border-left:1px solid #dbb;border-right:1px solid #dbb;padding:0.5em 1em 0.5em 1em}
+.rRline1, .rRline2, .rRline3, .rRline4{display:block;overflow:hidden;font-size:1px}
+.rRline1, .rRline2, .rRline3{height:1px}
+.rRline2, .rRline3, .rRline4{background:#fdd;border-left:1px solid #dbb;border-right:1px solid #dbb}
+.rRline1{margin:0 5px;background:#dbb}
+.rRline2{margin:0 3px;border-width:0 2px 0 2px}
+.rRline3{margin:0 2px}
+.rRline4{height:2px;margin:0 1px 0 1px}
+
+div.flexi{overflow:hidden;display:block;clear:both;width:100%;height:1%}
+div.flexi div.left{margin-right:5px;display:block; overflow:hidden;float:left}
+div.flexi div.center{text-align:left;margin:0 5px;display:block; overflow:hidden;float:left}
+div.flexi div.right{margin-left:5px;display:block;overflow:hidden;float:left}
 
 
 }
