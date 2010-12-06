@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langChildren type="integer">1</langChildren>
+		<langDisable type="integer">1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<field_fceleftw type="array">
+				<type>attr</type>
+				<tx_templavoila type="array">
+					<title>Width of left column (px)</title>
+					<description>Map to DIV class left (all templates)</description>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>int</eType>
+					<tags>div:attr:style</tags>
+					<TypoScript><![CDATA[10 = TEXT
+  10.current=1
+  10.wrap = width:|px]]></TypoScript>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>input</type>
+						<size>4</size>
+						<max>4</max>
+						<eval>int</eval>
+						<checkbox>0</checkbox>
+						<range type="array">
+							<upper>999</upper>
+							<lower>25</lower>
+						</range>
+						<default type="integer">0</default>
+					</config>
+					<label>Width of left column (px)</label>
+				</TCEforms>
+			</field_fceleftw>
+			<field_fceleft type="array">
+				<tx_templavoila type="array">
+					<title>FCE left content</title>
+					<description>Map to DIV class left (all templates)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Left Content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[10= RECORDS
+10.source.current=1
+10.tables = tt_content]]></TypoScript>
+					<oldStyleColumnNumber>2</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>FCE left content</label>
+				</TCEforms>
+			</field_fceleft>
+			<field_fcemiddlew type="array">
+				<type>attr</type>
+				<tx_templavoila type="array">
+					<title>Width of center column (px)</title>
+					<description>Map to DIV class center (only when using three columns)</description>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>int</eType>
+					<tags>div:attr:style</tags>
+					<TypoScript><![CDATA[10 = TEXT
+  10.current=1
+  10.wrap = width:|px]]></TypoScript>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>input</type>
+						<size>4</size>
+						<max>4</max>
+						<eval>int</eval>
+						<checkbox>0</checkbox>
+						<range type="array">
+							<upper>999</upper>
+							<lower>25</lower>
+						</range>
+						<default type="integer">0</default>
+					</config>
+					<label>Width of center column (px)</label>
+				</TCEforms>
+			</field_fcemiddlew>
+			<field_fcemiddle type="array">
+				<tx_templavoila type="array">
+					<title>FCE middle content</title>
+					<description>Map to DIV class center (ONLY when using 3 columns)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Middle Content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[10= RECORDS
+10.source.current=1
+10.tables = tt_content]]></TypoScript>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>FCE middle content</label>
+				</TCEforms>
+			</field_fcemiddle>
+			<field_fcerightw type="array">
+				<type>attr</type>
+				<tx_templavoila type="array">
+					<title>Width of right column (px)</title>
+					<description>Map to DIV class right (all templates)</description>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>int</eType>
+					<tags>div:attr:style</tags>
+					<TypoScript><![CDATA[10 = TEXT
+  10.current=1
+  10.wrap = width:|px]]></TypoScript>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>input</type>
+						<size>4</size>
+						<max>4</max>
+						<eval>int</eval>
+						<checkbox>0</checkbox>
+						<range type="array">
+							<upper>999</upper>
+							<lower>25</lower>
+						</range>
+						<default type="integer">0</default>
+					</config>
+					<label>Width of right column (px)</label>
+				</TCEforms>
+			</field_fcerightw>
+			<field_fceright type="array">
+				<tx_templavoila type="array">
+					<title>FCE right content</title>
+					<description>Map to DIV class right (all Templates)</description>
+					<sample_data type="array">
+						<numIndex index="0">[ Right Content ]</numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<tags>div</tags>
+					<TypoScript><![CDATA[10= RECORDS
+10.source.current=1
+10.tables = tt_content]]></TypoScript>
+					<oldStyleColumnNumber>2</oldStyleColumnNumber>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<label>FCE right content</label>
+				</TCEforms>
+			</field_fceright>
+		</el>
+	</ROOT>
+</T3DataStructure>
