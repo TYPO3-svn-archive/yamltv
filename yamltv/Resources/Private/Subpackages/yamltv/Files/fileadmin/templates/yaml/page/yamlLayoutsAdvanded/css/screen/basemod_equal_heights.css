@@ -13,16 +13,16 @@
 .example1 .subcr,
 .example1 .subc{background:#f0f0f0;color:#666;padding-bottom:100em;margin-bottom:-100em}
 .box-top .c33l,
-.box-top .c33r{background:url("images/lframe.png") top left no-repeat}
+.box-top .c33r{background:url("../../images/lframe.png") top left no-repeat}
 .box-top .subcl,
 .box-top .subcr,
-.box-top .subc{padding:15px;background:url("images/rframe.png") top right no-repeat;padding-bottom:100em;margin-bottom:-100em}
+.box-top .subc{padding:15px;background:url("../../images/rframe.png") top right no-repeat;padding-bottom:100em;margin-bottom:-100em}
 .box-bottom{margin-bottom:1em;text-align:right}
 .box-bottom .c33l,
 .box-bottom .c33r{background:url("images/lframe.png") bottom left no-repeat}
 .box-bottom .subcl,
 .box-bottom .subcr,
-.box-bottom .subc{padding:0 20px 15px 20px;background:url("images/rframe.png") bottom right no-repeat}
+.box-bottom .subc{padding:0 20px 15px 20px;background:url("../../images/rframe.png") bottom right no-repeat}
 .box-top h3{display:block;margin:10px 5px 5px 5px;border-bottom:1px #c88 solid;font-style:normal;font-variant:small-caps}
 .box-top p{padding:5px;margin-bottom:0}
 }
