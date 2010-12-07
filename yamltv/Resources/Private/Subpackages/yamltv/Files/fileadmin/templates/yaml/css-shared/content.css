@@ -111,7 +111,10 @@ div.csc-textpic div.csc-textpic-imagewrap ul{list-style:none;margin:0;padding:0}
 div.csc-textpic div.csc-textpic-imagewrap ul li{float:left;margin:0;padding:0}
 /* DL:This will place the images side by side */
 div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image{float:left}
-div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image a{padding-bottom:19px;background:url("images/magnifier_zoom_in.png") no-repeat scroll right bottom transparent}
+div.csc-textpic-imagewrap li.csc-textpic-image a{display:block;padding-bottom:16px;background:url("images/magnifier_zoom_in.png") no-repeat scroll right bottom #f2f2f2}
+div.csc-textpic-imagewrap li.csc-textpic-image a:hover,
+div.csc-textpic-imagewrap li.csc-textpic-image a:active,
+div.csc-textpic-imagewrap li.csc-textpic-image a:focus{outline:0 none}
 div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dt{float:none}
 div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dd{float:none;line-height:1.2em;padding-top:3px}
 div.csc-textpic div.csc-textpic-imagewrap dl.csc-textpic-image dd img{border:none} /* FE-Editing Icons */
