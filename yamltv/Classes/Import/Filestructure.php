@@ -42,14 +42,13 @@ class tx_yamltv_import_filestructure {
 	 * @var array
 	 */
 	private $cssFiles = array(
-		'fileadmin/default/templates/css/stylesheet.css',
-		'fileadmin/default/templates/css/frontpage.css',
+		'fileadmin/templates/yaml/css-shared/overlay.css',
 	);
 
 	/**
 	 *
 	 */
-	private $defaultColor = '#F18F0B';
+	private $defaultColor = '#182E7A';
 
 	/**
 	 * Resets the sourceDirectory based on the given subpackage
@@ -144,11 +143,11 @@ RewriteRule .* index.php [L]
 	 * @return void
 	 */
 	public function changeColor($color) {
-//		foreach ($this->cssFiles as $cssFile) {
-//			$cssContent = file_get_contents(PATH_site.$cssFile);
-//			$cssContent = str_replace($this->defaultColor, $color, $cssContent);
-//			file_put_contents(PATH_site.$cssFile, $cssContent);
-//		}
+		foreach ($this->cssFiles as $cssFile) {
+			$cssContent = file_get_contents(PATH_site.$cssFile);
+			$cssContent = str_replace($this->defaultColor, $color, $cssContent);
+			file_put_contents(PATH_site.$cssFile, $cssContent);
+		}
 	}
 }
 ?>

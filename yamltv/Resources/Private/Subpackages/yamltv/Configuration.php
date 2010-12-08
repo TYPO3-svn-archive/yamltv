@@ -44,8 +44,6 @@ $GLOBALS['subpackageConfiguration'] = array(
 		'tt_news',
 		'felogin',
 		'indexed_search',
-		'jquerycolorbox',
-		'wt_spamshield',
 	),
 )
 ?>
