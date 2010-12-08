@@ -66,7 +66,7 @@ class tx_yamltv_controller {
 	 *
 	 * @var string
 	 */
-	private $defaultColor = '#F18F0B';
+	private $defaultColor = '#182E7A';
 
 	/**
 	 * The default Subpackage to install
