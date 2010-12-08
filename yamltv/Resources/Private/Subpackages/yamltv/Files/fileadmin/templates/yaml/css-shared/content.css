@@ -2,14 +2,10 @@
  * "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
 @media all
 {
-/* (en) reset font size for all elements to standard (16 Pixel) */
-/* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
 html * {font-size:100.01%}
 textarea, pre, code, kbd, samp, var, tt{font-family:Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier}
-/* (en) base layout gets standard font size 12px */
-/* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
 body{font-family:Arial, Helvetica, sans-serif;font-size:75.00%;color:#444}
-/*---Headings | Überschriften---*/
+/* Headings */
 h1,h2,h3,h4,h5,h6{font-family:Georgia, "Times New Roman", Times, serif;font-weight:normal;color:#222;margin:0 0 0.25em 0}
 h1{font-size:250%} /* 30px */
 h2{font-size:200%} /* 24px */
@@ -17,7 +13,7 @@ h3{font-size:150%} /* 18px */
 h4{font-size:133.33%} /* 16px */
 h5{font-size:116.67%} /* 14px */
 h6{font-size:116.67%} /* 14px */
-/*---Lists | Listen---*/
+/* Lists */
 ul, ol, dl{line-height:1.5em;margin:0 0 1em 1em}
 ul{list-style-type:disc}
 ul ul{list-style-type:circle;margin-bottom:0}
@@ -26,7 +22,7 @@ ol ol{list-style-type:lower-latin;margin-bottom:0}
 li{margin-left:0.8em;line-height:1.5em}
 dt{font-weight:bold}
 dd{margin:0 0 1em 0.8em}
-/*---general text formatting | Allgemeine Textauszeichnung---*/
+/* general text formatting */
 p{line-height:1.5em;margin:0 0 1em 0}
 blockquote, cite, q{font-family:Georgia, "Times New Roman", Times, serif;font-style:italic}
 blockquote{margin:0 0 1em 1.6em;color:#666}
@@ -43,23 +39,14 @@ acronym, abbr{border-bottom:1px #aaa dotted;font-variant:small-caps;letter-spaci
 sub{vertical-align:sub;font-size:smaller}
 sup{vertical-align:super;font-size:smaller}
 hr{color:#fff;background:transparent;margin:0 0 0.5em 0;padding:0 0 0.5em 0;border:0;border-bottom:1px #eee solid}
-/*---Links---*/
+/* Links */
 a{color:#4D87C7;background:transparent;text-decoration:none}
 a:visited{color:#036}
 /* (en) maximum constrast for tab focus - change with great care */
-/* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
 a:focus{text-decoration:underline;color:#000;background:#fff;outline:1px #f93 solid}
 a:hover,
 a:active{color:#182E7A;text-decoration:underline;outline:0 none}
-/*---images (with optional captions) | Bilder (mit optionaler Bildunterschrift)---*/
-p.icaption_left{float:left;display:inline;margin:0 1em 0.15em 0}
-p.icaption_right{float:right;display:inline;margin:0 0 0.15em 1em}
-p.icaption_left img,
-p.icaption_right img{padding:0;border:1px #888 solid}
-p.icaption_left strong,
-p.icaption_right strong{display:block;overflow:hidden;margin-top:2px;padding:0.3em 0.5em;background:#eee;font-weight:normal;font-size:91.667%}
-/* (en) standard classes for positioning and highlighting */
-/* (de) Standardklassen zur Positionierung und Hervorhebung */
+/* standard classes for positioning and highlighting */
 .highlight{color:#c30}
 .dimmed{color:#888}
 .info{background:#f2f2f2;color:#666;padding:10px;margin-bottom:0.5em;font-size:91.7%}
@@ -72,8 +59,7 @@ p.icaption_right strong{display:block;overflow:hidden;margin-top:2px;padding:0.3
 .align-center{text-align:center}
 .align-right{text-align:right}
 .indent{margin-left:2em}
-/* (en) Generic classes for table-width and design definition */
-/* (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen */
+/* Generic classes for table-width and design definition */
 table{width:auto;border-collapse:collapse;margin-bottom:0.5em;border-top:2px #888 solid;border-bottom:2px #888 solid}
 table caption{font-variant:small-caps}
 table.full{width:100%}
@@ -88,7 +74,6 @@ tbody tr:hover th[scope="row"],
 tbody tr:hover tbody th.sub{background:#f0e8e8}
 tbody tr:hover td{background:#fff8f8}
 table.contenttable{width:100%}
-/* ------------------------------------------------------------------------------------------------- */
 /* TYPO3 */
 /* default styles for extension "tx_cssstyledcontent" */
 /* Instead of markup text-pic-clear !! */
@@ -205,13 +190,13 @@ p.gettingStartedStepFurtherReading{margin:3em 0 2em 85px}
 /* Frame "Infobox" */
 .infobox{font-size:91.7%;border:1px solid #CFCECF;padding:0 10px 5px;background-color:#F2F2F2;margin-bottom:1.5em}
 .infobox h2{font-size:150%;margin:0 -10px .75em -10px;padding:6px 10px;color:white;background-color:#494949}
-
+/* default Character classes */
 span.underline{text-decoration:underline}
 span.strikethrough{text-decoration:line-through}
 span.mono{font-family:"Courier New", Courier, monospace;padding:0 0.3em 0 0.3em;color:#000088}
 span.file{font-family:"Courier New", Courier, monospace;padding:0 0 0 14px;color:#000088;background:transparent url('images/file.gif') no-repeat left}
 span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;color:#000088;background:transparent url('images/dir.gif') no-repeat left}
-
+/* Standard TYPO3 mailform */
 #mailform{background:#f4f4f4;border:1px #ddd solid;margin:0 0 1em 0;padding:10px}
 #mailform fieldset{border:1px #ddd solid;background:#fafafa;margin:0 0 1em 0;padding:0.5em}
 #mailform input.input-mailform,
@@ -246,7 +231,6 @@ span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;
 #jumpMenu #level3 select option{}
 #jumpMenu #level4 select{padding-left:15%;background-color:#b4b4b4}
 #jumpMenu #level4 select option{}
-/* DO NOT delete the last line!! */
 /* Color 1 (blue by default) */
 .REboxColor1Content{overflow:hidden}
 .REboxColor1{display:block;margin-bottom:1em}
@@ -283,11 +267,57 @@ span.directory{font-family:"Courier New", Courier, monospace;padding:0 0 0 15px;
 .rRline2{margin:0 3px;border-width:0 2px 0 2px}
 .rRline3{margin:0 2px}
 .rRline4{height:2px;margin:0 1px 0 1px}
-
+/* flexi FCE */
 div.flexi{overflow:hidden;display:block;clear:both;width:100%;height:1%}
 div.flexi div.left{margin-right:5px;display:block; overflow:hidden;float:left}
 div.flexi div.center{text-align:left;margin:0 5px;display:block; overflow:hidden;float:left}
 div.flexi div.right{margin-left:5px;display:block;overflow:hidden;float:left}
-
-
+/* FElogin */
+.tx-felogin-pi1 {}
+.tx-felogin-pi1 fieldset {padding:15px;border:1px dotted #666}
+.tx-felogin-pi1 label {display:block;float:left;width:25%}
+.tx-felogin-pi1 input {}
+.tx-felogin-pi1 input[type="submit"] {margin:1em 0 0 24.5%;cursor:pointer;width:auto}
+.tx-felogin-pi1 input#user,
+.tx-felogin-pi1 input#pass,
+.tx-felogin-pi1 input.forgotPw {border:1px solid #666;padding:1px;cursor:text;width:70%}
+.tx-felogin-pi1 input#user:focus,
+.tx-felogin-pi1 input#pass:focus,
+.tx-felogin-pi1 input.forgotPw:focus {border:1px dotted #666}
+.tx-felogin-pi1 div {margin:0 0 5px 0}
+.tx-felogin-pi1 p{font-size:90%;text-align:right}
+/* News */
+/* List view */
+.news-list-container {}
+.news-list-container .news-list-item {clear:both;overflow:hidden;margin:0 0 20px 0}
+.news-list-container .news-list-item h3 {margin:0 0 10px 0;font-size:1.2em}
+.news-list-container .news-list-item h3 span {font-weight:normal;padding-right:5px}
+.news-list-container .news-list-item .newsImage {float:left;margin:0 10px 0 0}
+.news-list-container .news-list-item .news-list-subheader {overflow:hidden}
+.news-list-container .news-list-item .news-list-subheader p {margin:0}
+.news-list-container .news-list-item .news-list-subheader p span {display:block;text-align:right}
+.news-list-container .news-list-item .news-list-category {font-style:italic;font-size:90%}
+/* Single view */
+.news-single-item {}
+.news-single-item h2 {margin:10px 0 0 0}
+.news-single-item .news-single-subheader {}
+.news-single-item .news-single-img {float:left;margin:0 15px 5px 0;padding:4px 0 0 0}
+.news-single-item p {margin:0 0 .5em 0}
+.news-single-item p.news-single-imgcaption {font-style:italic;font-size:90%;padding:3px 0 0 0}
+/* Lists */
+ul.csc-bulletlist-1 li {list-style-type:decimal}
+ul.csc-bulletlist-2 li {list-style-type:circle;margin-bottom:.4em;color:#CC3300} 
+ul.csc-bulletlist-2 li.odd {} 
+ul.csc-bulletlist-2 li.even {} 
+ul.csc-bulletlist-3 li {list-style-type:square;margin-bottom:.4em} 
+ul.csc-bulletlist-3 li.odd {} 
+ul.csc-bulletlist-3 li.even {}
+/* Downloads */
+table.csc-uploads {margin-bottom:1em}
+table.csc-uploads tr.tr-odd {}
+table.csc-uploads tr td img {}
+table.csc-uploads tr td.csc-uploads-icon {width:1%;vertical-align:top}
+table.csc-uploads tr td.csc-uploads-fileName {width:80%}
+table.csc-uploads tr td.csc-uploads-fileSize {text-align:right;white-space:nowrap}
+/* DO NOT delete the last line!! */
 }
