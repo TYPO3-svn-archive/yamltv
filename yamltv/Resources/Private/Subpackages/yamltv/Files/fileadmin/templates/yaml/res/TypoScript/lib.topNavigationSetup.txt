@@ -1,0 +1,36 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+lib.topNavigation = COA
+lib.topNavigation {
+ 10 = TEXT
+ 10 {
+  value = No language label
+  override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.topNavigation.loginPageNameNotLoggedIn
+  typolink {
+   parameter = {$template-yaml.loginpageID}
+   title = No language label
+   title.override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.topNavigation.linkTitleNotLoggedIn
+  }
+  noTrimWrap = |  | &#124; |
+ }
+ 20 = HMENU
+ 20 {
+  special =list
+  special.value = {$template-yaml.topNavigationIncludeList}
+  includeNotInMenu = 1
+  1 = TMENU
+  1 {
+   noBlur = 1
+   NO {
+    allWrap = |&nbsp;&#124;&nbsp; |*| |&nbsp;&#124;&nbsp; |*| |
+   }
+  }
+ }
+ wrap = <span class="navlinks">|</span>
+}
+[usergroup = *]
+lib.topNavigation.10.override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.topNavigation.loginPageNameLoggedIn
+lib.topNavigation.10.typolink.title.override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.topNavigation.linkTitleLoggedIn
+[global]

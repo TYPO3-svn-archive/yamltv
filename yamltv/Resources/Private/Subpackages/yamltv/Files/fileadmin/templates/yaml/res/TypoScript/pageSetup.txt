@@ -1,0 +1,15 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+page = PAGE
+page {
+ bodyTag >
+ bodyTagCObject = TEXT
+ bodyTagCObject.field = uid
+ bodyTagCObject.wrap = <body id="page|">
+}
+page.10 = USER
+page.10 {
+ userFunc = tx_templavoila_pi1->main_page
+}

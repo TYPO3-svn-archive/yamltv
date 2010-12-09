@@ -1,0 +1,49 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+[globalVar = LIT:1 = {$template-yaml.useSearchBox}]
+lib.searchbox = COA
+# Make the searchbox remember the search term on the search result page
+[globalVar = TSFE:id = 47]
+lib.searchbox = COA_INT
+[global]
+lib.searchbox {
+ 10 = TEXT
+ 10 {
+  typolink {
+   parameter = {$plugin.tx_indexedsearch.searchpageID}
+   returnLast = url
+  }
+  wrap = <form action="|" method="post" id="indexedsearch"><fieldset>
+ }
+ 20 = COA
+ 20 {
+  10 = TEXT
+  10 {
+   data = GP : tx_indexedsearch |sword
+   wrap = <input name="tx_indexedsearch[sword]" value="|" id="inputText" type="text" />
+  }
+  20 = COA
+  20 {
+   10 = TEXT
+   10 {
+    value = No language label
+    override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.searchbox.altText
+    wrap = <input type="image" src="{$filepaths.images}bg_searchButton.gif" id="inputButton" alt="|"
+   }
+   20 = TEXT
+   20 {
+    value = No language label
+    override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.searchbox.titleText
+    noTrimWrap = | title="|" />|
+   }
+   30 = TEXT
+   30.value = <input type="hidden" name="tx_indexedsearch[sections]" value="0" />
+   40 = TEXT
+   40.value = <input name="tx_indexedsearch[submit_button]" value="Search" type="hidden" />
+  }
+ }
+ wrap = <div id="searchBox">|</fieldset></form></div>
+}
+[global]

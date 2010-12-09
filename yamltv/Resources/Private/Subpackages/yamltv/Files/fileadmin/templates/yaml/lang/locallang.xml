@@ -22,6 +22,8 @@
 			<label index="lib.jumpMenu.append"> --</label>
 			<label index="lib.jumpMenu.level0prepend">-- </label>
 			<label index="lib.jumpMenu.level0append"> --</label>
+			<label index="lib.skiplinks.toNavigation">Skip to navigation (Press Enter).</label>
+			<label index="lib.skiplinks.toContent">Skip to main content (Press Enter).</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 		</languageKey>

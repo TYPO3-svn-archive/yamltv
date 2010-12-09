@@ -1,0 +1,16 @@
+#################################
+# Last Changed: 09.12.2010
+# ToDo:
+#################################
+lib.skiplinks = COA
+lib.skiplinks {
+  10 = TEXT
+  10.value = No language label
+  10.override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.skiplinks.toNavigation
+  10.wrap = <li><a class="skip" href="#nav">|</a></li>
+  20 = TEXT
+  20.value = No language label
+  20.override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.skiplinks.toContent
+  20.wrap = <li><a class="skip" href="#main">|</a></li>
+  wrap = <ul id="skiplinks">|</ul>
+}

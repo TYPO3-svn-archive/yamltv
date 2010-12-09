@@ -1,0 +1,19 @@
+plugin.tx_felogin_pi1 {
+# Use our own HTML template from the fileadmin directory
+# so we can freely modify it without changing the extension
+ templateFile = {$filepaths.extensiontemplates}felogin/tx_felogin_pi1_template.html
+# Clear default CSS additions - we take care of that in our own CSS files
+ _CSS_DEFAULT_STYLE >
+ welcomeHeader_stdWrap.wrap = <h2>|</h2>
+ welcomeMessage_stdWrap.wrap = <div class="note">|</div>
+ successHeader_stdWrap.wrap = <h2>|</h2>
+ successMessage_stdWrap.wrap = <div class="note">|</div>
+ forgotHeader_stdWrap.wrap = <h2>|</h2>
+ forgotMessage_stdWrap.wrap = <div class="note">|</div>
+ errorHeader_stdWrap.wrap = <h2>|</h2>
+ errorMessage_stdWrap.wrap = <div class="warning">|</div>
+ logoutHeader_stdWrap.wrap = <h2>|</h2>
+ logoutMessage_stdWrap.wrap = <div class="note">|</div>
+ changePasswordHeader_stdWrap.wrap = <h2>|</h2>
+ changePasswordMessage_stdWrap.wrap = <div class="note">|</div>
+}

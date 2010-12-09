@@ -1,0 +1,28 @@
+#################################
+# Last changed: 01.12.2010
+# ToDo:
+#################################
+lib.header = COA
+lib.header {
+ 10 < lib.topNavigation
+ 10.wrap = <div id="topnav">|</div>
+ 20 = TEXT
+ 20 {
+  dataWrap = DB:pages:{TSFE:id}:title
+  insertData = 1
+  wrap3 = <h1>{|}</h1>
+ }
+ 30 = TEXT
+ 30 {
+  dataWrap = DB:pages:{TSFE:id}:subtitle
+  insertData = 1
+  wrap3 = <span>{|}</span>
+ }
+ wrap = <div id="header">|</div>
+}
+[globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}] || [globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
+lib.header.wrap = <div id="header"><div class="page_margins"><div class="page">|</div></div></div>
+[global]
+[globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
+lib.header.10 >
+[global]

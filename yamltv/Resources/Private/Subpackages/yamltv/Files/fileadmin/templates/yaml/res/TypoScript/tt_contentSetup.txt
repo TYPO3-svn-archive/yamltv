@@ -1,0 +1,56 @@
+tt_content {	
+ # Make some modifications to the rendering of the standard MAIL form records
+ mailform {
+  20 {
+   accessibility = 1
+   RADIO.layout = <div class="csc-mailform-field">###LABEL### ###FIELD###</div>
+   radioWrap.accessibilityWrap = <fieldset###RADIO_FIELD_ID### class="csc-mailform-radio"><legend>###RADIO_GROUP_LABEL###</legend>|</fieldset>
+   params {
+    input = class="input-mailform"
+    password = class="password-mailform"
+    textarea = class="textarea-mailform"
+    check = class="checkbox-mailform"
+    radio = class="radiobutton-mailform"
+    select = class="select-mailform"
+    file = class="file-mailform"
+    reset = class="reset-mailform"
+    submit = class="submit-mailform"
+   }
+  }
+ }
+ # Remove the ancient onfocus="blurLink(this);" from sitemap links
+ # Unfortunately this hasn't been fully implemented in css_styled_content yet
+ # See also bug 11367
+ menu.20 {
+  default.1.noBlur = 1
+  1.1.noBlur = 1
+  4.1.noBlur = 1
+  5.1.noBlur = 1
+  6.1.noBlur = 1
+  7.1.noBlur = 1
+  7.2.noBlur = 1
+ }
+ stdWrap.innerWrap.cObject {
+  50 = TEXT
+  50.value = <div class="infobox">|</div>
+  51 = TEXT
+  51.value = <div class="frame51">|</div>
+  52 = TEXT
+  52.value = <div class="frame52">|</div>
+  53 = TEXT
+  53.value = <div class="frame53">|</div>
+ }
+ image.20.layout {
+  1.value = <div class="csc-textpic csc-textpic-right csc-textpic-above###CLASSES###">###IMAGES######TEXT###</div>
+  2.value = <div class="csc-textpic csc-textpic-left csc-textpic-above###CLASSES###">###IMAGES######TEXT###</div>
+  8.value = <div class="csc-textpic csc-textpic-center csc-textpic-below###CLASSES###">###TEXT######IMAGES###</div>
+  9.value = <div class="csc-textpic csc-textpic-right csc-textpic-below###CLASSES###">###TEXT######IMAGES###</div>
+  10.value = <div class="csc-textpic csc-textpic-left csc-textpic-below###CLASSES###">###TEXT######IMAGES###</div>
+  17.override = <div class="csc-textpic csc-textpic-intext-right###CLASSES###">###IMAGES######TEXT###</div>
+  18.override = <div class="csc-textpic csc-textpic-intext-left###CLASSES###">###IMAGES######TEXT###</div>
+  18.override = <div class="csc-textpic csc-textpic-intext-left###CLASSES###">###IMAGES######TEXT###</div>
+  25.value = <div class="csc-textpic csc-textpic-intext-right-nowrap###CLASSES###">###IMAGES###<div style="margin-right:{register:rowWidthPlusTextMargin}px;">###TEXT###</div></div>
+  26.value = <div class="csc-textpic csc-textpic-intext-left-nowrap###CLASSES###">###IMAGES###<div style="margin-left:{register:rowWidthPlusTextMargin}px;">###TEXT###</div></div>
+  default.value = <div class="csc-textpic csc-textpic-center csc-textpic-above###CLASSES###">###IMAGES######TEXT###</div>
+ }
+}

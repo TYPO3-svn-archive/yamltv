@@ -1,0 +1,70 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+lib.navMain = COA
+lib.navMain {
+ 10 = COA
+ 10 {
+  10 = HMENU
+  10 {
+   entryLevel = 0
+   excludeUidList = {$template-yaml.mainNavigationExcludeList}
+   1 = TMENU
+   1 {
+#    accessKey = 1
+    noBlur = 1
+    NO = 1
+    NO.ATagTitle.field = subtitle
+    NO.allWrap = <li>|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    ACT = 1
+    ACT < .NO
+    ACT.allWrap = <li class="active"><strong>|</strong></li>
+    ACT.doNotLinkIt = 1
+   }
+  }
+  wrap = <div class="hlist"><ul> | </ul></div>
+ }
+ wrap = <div id="nav"> | </div>
+}
+[globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}] || [globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
+lib.navMain >
+lib.navMain = COA
+lib.navMain {
+ 10 = COA
+ 10 {
+  10 = HMENU
+  10 {
+   entryLevel = 0
+   excludeUidList = {$template-yaml.mainNavigationExcludeList}
+   1 = TMENU
+   1 {
+    noBlur = 1
+    accessKey = 1
+    NO = 1
+    NO.ATagTitle.field = subtitle
+    NO.before.cObject = LOAD_REGISTER
+    NO.before.cObject {
+     menuDesc.cObject = TEXT
+     menuDesc.cObject.field = subtitle
+    }
+    NO.linkWrap = |<span>{register:menuDesc}</span>
+    NO.allStdWrap.insertData = 1
+    NO.ATagBeforeWrap = 1
+    NO.allWrap = <li>|</li> |*| <li>|</li> |*| <li class="last">|</li>
+    NO.stdWrap.htmlSpecialChars = 1
+    ACT = 1
+    ACT < .NO
+    ACT.allWrap = <li class="active"><strong>|</strong></li>
+   }
+  }
+  wrap = <div class="hlist"><ul> | </ul></div>
+ }
+ wrap = <div id="nav"><div class="page_margins"><div class="page"> | </div></div></div>
+}
+[global]
+[globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}]
+lib.navMain.10.10.1.NO.linkWrap = |<span></span>
+lib.navMain.10.10.1.ACT.linkWrap = |<span></span>
+[global]

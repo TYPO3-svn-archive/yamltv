@@ -1,0 +1,100 @@
+config {
+# cat=config; type=boolean; label=Admin Panel: Turn on admin panel (mainly for testing purposes only)
+ adminPanel = 0
+# cat=config; type=boolean; label=Debugging: Turn on debugging (testing purposes only)
+ debug = 0
+# cat=config; type=string; label=Domain name for Base URL: (excluding slashes and protocol like http://)
+ domain =
+}
+filepaths {
+# cat=filepaths; type=string; label=HTML Templates: Location of the (X)HTML templates relative to site
+ templates = fileadmin/templates/page/
+# cat=filepaths; type=string; label=CSS: Location of the Cascading Style Sheets relative to site
+ css = fileadmin/templates/yaml/css-shared/
+# cat=filepaths; type=string; label=Images: Location of the images relative to site
+ images = fileadmin/templates/images/
+# cat=filepaths; type=string; label=Scripts: Location of the Javascript files relative to site
+ scripts = fileadmin/templates/scripts/
+ # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
+ extensiontemplates = fileadmin/templates/extensions/
+ # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
+ languagefile = fileadmin/templates/yaml/lang/
+}
+plugin.tt_news {
+# cat=plugin.tt_news; type=int+; label= pid_list: Comma separated list of folder id's containing which contain news records.
+ pid_list = 16
+# cat=plugin.tt_news; type=int+; label= singlePid: Default ID of the page containing the tt_news SINGLE-view plugin
+ singlePid = 49
+# cat=plugin.tt_news; type=int+; label= limit: Default maximum number of items to be shown in LIST-view
+ limit = 100
+# Date and time formats according to active locales
+ dateformat = %x
+ dateandtimeformat = %c
+# Short notation date format according to international ISO standard
+ shortdateformat = %Y-%m-%d
+ timeformat = %H:%M
+}
+plugin.tx_indexedsearch {
+# cat=plugin.indexed_search; type=int+; label= Search Page ID: UID of the page which contains the indexed search plugin.
+ searchpageID = 47
+}
+plugin.meta {
+# cat=plugin.meta; type=string; label= Description: Write a short abstract for your website.
+ description = YAML Template by typo3-asia.com - Replace this description with your own. This description will be used if you don't fill out the description field on a page.
+# cat=plugin.meta; type=string; label= Keywords: Enter a comma separated list of keywords.
+ keywords = replace please, yaml, template, typo3, example
+# cat=plugin.meta; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
+ robots = all
+# cat=plugin.meta; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
+ copyright = Enter your copyright here.
+# cat=plugin.meta; type=string; label= Reply-to email
+ email =
+# cat=plugin.meta; type=string; label= Author: Enter name of author.
+ author = Your name
+# cat=plugin.meta; type=int+; label= Revisit after: Number of days between search engine visits.
+ revisit = 7
+# The meta tags below are not used on this website, if you want to use these, you can configure that in TypoScript template page.meta
+# cat=plugin.meta; type=boolean; label=Always include global.
+ includeGlobal = 0
+# cat=plugin.meta; type=options[,Arabic=ar,Chinese=zh,Danish=dk,Dutch=nl,English=en,Finnish=fi,French=fr,German=de,Greek=el,Hebrew=he,Icelandic=is,Italian=it,Japanese=ja,Norwegian=no,Polish=pl,Portuguese=pt,Russian=ru,Spanish=es,Swedish=sv,Turkish=tr,Multi language=mul]; label= Language: Select language of the content.
+ language = en
+# cat=plugin.meta; type=string; label= Distribution
+ distribution = global
+# cat=plugin.meta; type=options[,General,Mature,14 years,Restricted]; label= Rating
+ rating = General	
+}
+template-yaml {
+# cat=template-yaml/enable/a; type=int+; label= loginpageID: UID of the customer login page.
+ loginpageID = 42
+# cat=template-yaml/enable/e; type=options[No=0,Yes=1]; label=Use Fullpage-Layouts?:Set to yes if you are using one of the YAML Fullpage-Layouts
+ useFullpageLayouts = 0
+# cat=template-yaml/enable/f; type=options[No=0,Yes=1]; label=Use Grid-Layouts?:Set to yes if you are using one of the YAML Grid-Layouts
+ useGridLayouts = 1
+# cat=template-yaml/enable/g; type=options[No=0,Yes=1]; label=Use Fullheight-Layouts?:Set to yes if you are using one of the YAML Fullheight-Layouts
+ useFullheightLayouts = 0
+# cat=template-yaml/enable/h; type=options[No=0,Yes=1]; label=Use JavaScript Jump-Menu?:Set to yes if want a JavaScript Jump-Menu instead of a standard list-menu. IMPORTANT: At the moment this a proof of concept only. It does not work with realURL for the time beeing. If you want to use it, you should modify it.
+ useJumpMenuInsteadOfVlist = 0
+# cat=template-yaml/enable/i; type=options[No=0,Yes=1]; label=Show search box?:If set, a search box is show BELOW the menu. If you need it ABOVE, you only need to modify the point where it is copied to (menu_configuration > lib.navSub)
+ useSearchBox = 1
+# cat=template-yaml/enable/b; type=string; label=Top navigation inclusion:What pages to show in the top navigation additionally to the login page? Use a comma-separated list of UIDs (e.g. 1,2,3)
+ topNavigationIncludeList = 47,80,81
+# cat=template-yaml/enable/c; type=string; label=Main navigation exclusion:What pages to exclude from the main navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+ mainNavigationExcludeList =
+# cat=template-yaml/enable/d; type=string; label=Sub navigation exclusion:What pages to exclude from the sub navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+ subNavigationExcludeList = 
+}
+styles.content {
+# This defines the maximum width of images inserted in content records of type Images or Text-with-images.
+# There are seperate settings for images floated next to text (..InText)
+ imgtext {
+  maxW = 651
+  maxWInText = 651
+  borderThick = 1
+  linkWrap.newWindow = 1
+ }
+ uploads {
+  jumpurl_secure = 1
+  jumpurl_secure_mimeTypes = pdf=application/pdf, doc=application/msword
+  jumpurl = 1
+ }
+}

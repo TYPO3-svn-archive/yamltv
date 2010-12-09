@@ -1,0 +1,32 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+lib.footer = COA
+lib.footer {
+ 10 = TEXT
+ 10 {
+  value = No language label
+  override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.footer.copyrightName
+  noTrimWrap = | | &middot; |
+ }
+ 20 = TEXT
+ 20 {
+  value = No language label
+  override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.footer.designCreatorLabel
+  noTrimWrap = | |<a href="http://www.yaml.de/" target="_blank">YAML</a> &middot; |
+ }
+ 30 = TEXT
+ 30 {
+  value = No language label
+  override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.footer.templateCreatorLabel
+  wrap = |<a href="http://typo3-asia.com/" target="_blank">Dieter Bunkerd</a>
+ }
+ wrap = <div id="footer">|</div>
+}
+[globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}] || [globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
+lib.footer.wrap = <div id="footer"><div class="page_margins"><div class="page"><p class="footerContent">|</p></div></div></div>
+[global]
+[globalVar = LIT:1 = {$template-yaml.useFullheightLayouts}]
+lib.footer.wrap = <div id="footer"><div id="footer_content">|</div></div>
+[global]

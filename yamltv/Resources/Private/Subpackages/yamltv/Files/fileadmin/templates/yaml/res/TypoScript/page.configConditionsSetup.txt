@@ -1,0 +1,13 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+#Condition to set language according to L POST/GET variable
+[globalVar = GP:L = 1]
+config {
+ htmlTag_langKey = de
+ sys_language_uid = 1
+ language = de
+ locale_all = de_DE.utf8
+}
+[global]

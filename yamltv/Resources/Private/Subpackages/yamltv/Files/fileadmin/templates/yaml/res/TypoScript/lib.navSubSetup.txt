@@ -1,0 +1,74 @@
+#################################
+# Last Changed: 04.12.2010
+# ToDo:
+#################################
+[treeLevel = 0]
+[else]
+temp.navSub = HMENU
+temp.navSub {
+ entryLevel = 1
+ excludeUidList = {$template-yaml.subNavigationExcludeList}
+ 1 = TMENU
+ 1 {
+  expAll = 0
+  noBlur = 1
+  wrap = <ul class="vlist">|</ul>
+  NO = 1
+  NO {
+   ATagTitle.field = subtitle
+   wrapItemAndSub = <li>|</li>
+   stdWrap.htmlSpecialChars = 1
+  }
+  IFSUB = 1
+  IFSUB < .NO
+  IFSUB {
+   wrapItemAndSub = <li class="hasChild">|</li>
+  }
+  ACTIFSUB = 1
+  ACTIFSUB < .NO
+  ACTIFSUB {
+   wrapItemAndSub = <li class="hasChildIsActive">|</li>
+  }
+  CUR = 1
+  CUR < .NO
+  CUR {
+   wrapItemAndSub = <li class="active">|</li>
+   allWrap = <strong>|</strong>
+   doNotLinkIt = 1
+  }
+ }
+ 2 < .1
+ 2.wrap = <ul>|</ul>
+ 3 < .1
+ 3.wrap = <ul>|</ul>
+ 4 < .1
+ 4.wrap = <ul>|</ul>
+}
+temp.navSubWithHeadline < temp.navSub
+temp.navSubWithHeadline {
+ stdWrap {
+  required = 1
+  prepend = TEXT
+  prepend {
+   value = Unconfigured label
+   override.data = LLL:{$filepaths.languagefile}locallang.xml:lib.navSub.menuHeadline
+   wrap = <span class="vlist">|</span>
+  }
+ }
+}
+[global]
+lib.navSub = COA
+lib.navSub {
+ 10 < temp.navSubWithHeadline
+# Uncomment if no headline should be used
+# 10 < temp.navSub
+ 20 < lib.searchbox
+}
+[globalVar = LIT:1 = {$template-yaml.useJumpMenuInsteadOfVlist}]
+lib.navSub >
+lib.navSub = COA
+lib.navSub {
+ 10 < lib.jumpMenu
+ 20 < lib.searchbox
+}
+[global]

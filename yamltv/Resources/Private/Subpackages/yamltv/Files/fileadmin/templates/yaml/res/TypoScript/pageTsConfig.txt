@@ -1,0 +1,104 @@
+# Settings for TemplaVoila
+templavoila.wizards.newContentElement.renderMode = tabs
+mod {
+ # Set the default label and flag
+ SHARED {
+  defaultLanguageLabel = English
+  defaultLanguageFlag = gb.gif
+ }
+ # Settings for TemplaVoila
+ web_txtemplavoilaM1 {
+  enableDeleteIconForLocalElements = 1
+  createPageWizard {
+   fieldNames = hidden, title, subtitle, description, abstract
+  }
+ }
+ web_txtemplavoilaM2 {
+  templatePath = templates/yaml/page,templates/yaml/grids
+  hideNewSiteWizard = 1
+ }
+ web_layout {
+  tt_content {
+    colPos_list = 0,1,2,3,4,5
+  }
+ }
+}
+TCEFORM {
+ tt_content.section_frame.addItems {
+  50 = DIV-50
+ }
+ tt_content.section_frame.altLabels {
+  50 = Infobox
+ }
+ pages {
+# There is no need for the Alias field in page properties when we use RealURL
+  alias.disabled = 1
+ }
+}
+# If an editor creates a page it should be visible to all editors and admins
+TCEMAIN {
+# group "all users"
+  permissions.groupid = 3
+  user = show,edit,delete,new,editcontent
+  group = show,edit,delete,new,editcontent
+  everybody =
+}
+RTE.default {
+  hidePStyleItems = div,blockquote,address,h6
+  contentCSS = fileadmin/templates/yaml/css-shared/rte.css
+  showTagFreeClasses = 0
+  showButtons = *
+  hideButtons = lefttoright, righttoleft, fontstyle, fontsize, showhelp, textcolor, bgcolor, left, inserttag, user, blockquote, definitionlist, definitionitem, line, outdent, indent, underline, strikethrough
+  keepButtonGroupTogether = 1
+  classesCharacter = underline,strikethrough,mono,file,directory
+  classesParagraph = highlight,dimmed,info,note,important,warning,align-center,align-left,align-right,align-justify
+  allowedClasses = underline,strikethrough,mono,file,directory,highlight,dimmed,info,note,important,warning,align-center,align-left,align-right,align-justify
+  proc {
+    allowedClasses < RTE.default.allowedClasses
+  }
+  FE {
+    proc  {
+      allowedClasses < RTE.default.allowedClasses
+    }
+  }
+  ignoreMainStyleOverride = 0
+  mainStyleOverride = body.htmlarea-content-body {background:none white;text-align:left;color:#222}
+}
+RTE.classesAnchor {
+  externalLink {
+    class = external-link
+    type = url
+    image >
+    titleText =
+  }
+  externalLinkInNewWindow {
+    class = external-link-new-window
+    type = url
+    image >
+    titleText =
+  }
+  internalLink {
+    class = internal-link
+    type = page
+    image >
+    titleText =
+  }
+  internalLinkInNewWindow {
+    class = internal-link-new-window
+    type = page
+    image >
+    titleText =
+  }
+  download {
+    class = download
+    type = file
+    image >
+    titleText =
+  }
+  mail {
+    class = mail
+    type = mail
+    image >
+    titleText =
+  }
+}

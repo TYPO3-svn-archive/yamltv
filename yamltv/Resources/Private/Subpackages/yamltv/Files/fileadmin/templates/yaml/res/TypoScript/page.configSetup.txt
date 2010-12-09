@@ -1,0 +1,52 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+config {
+ admPanel = {$config.adminPanel}
+ debug = {$config.debug}
+ doctype = xhtml_trans
+# doctype = html_5
+ renderCharset = utf-8
+ metaCharset = utf-8
+ cache_period = 43200
+ sendCacheHeaders = 1
+ tx_realurl_enable = 1
+ simulateStaticDocuments = 0
+ uniqueLinkVars = 1
+ linkVars = L
+ sys_language_uid = 0
+ sys_language_mode = content_fallback
+ sys_language_overlay = hideNonTranslated
+############################################
+# CHANGE to set a different default language
+############################################
+ language = en
+ locale_all = en_US.UTF-8
+ htmlTag_langKey = en
+#############################################
+# absRefPrefix = /
+ prefixLocalAnchors = all
+ intTarget =
+ extTarget =
+ index_enable = 1
+ index_externals = 1
+ index_metatags = 0
+ disablePrefixComment = 1
+ removeDefaultJS = 1
+ inlineStyle2TempFile = 1
+ spamProtectEmailAddresses = -3
+ spamProtectEmailAddresses_atSubst = @<span style="display:none;">remove-this.</span>
+ headerComment = The YAML template is brought to you by TYPO3 in Asia - http://typo3-asia.com/
+}
+# Set baseURL setting for http or https
+config.baseURL = http://{$config.domain}/
+[globalString = IENV:TYPO3_SITE_URL=https://{$config.domain}/]
+config.baseURL = https://{$config.domain}/
+[global]
+#Condition to switch the doctype and xml prologue
+[browser = msie] && [version = <7]
+config {
+ doctypeSwitch = 1
+}
+[global]

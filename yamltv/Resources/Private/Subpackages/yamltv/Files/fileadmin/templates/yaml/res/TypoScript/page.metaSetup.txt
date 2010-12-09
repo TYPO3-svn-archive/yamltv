@@ -1,0 +1,22 @@
+#################################
+# Last Changed: 01.12.2010
+# ToDo:
+#################################
+page.meta {
+ keywords = {$plugin.meta.keywords}
+ keywords.override.field = keywords
+ description = {$plugin.meta.description}
+ description.override.field = description
+ revisit-after = {$plugin.meta.revisit} days
+ copyright = {$plugin.meta.copyright}
+ author = {$plugin.meta.author}
+ author.override.field = author
+ robots = {$plugin.meta.robots}
+ language = {$plugin.meta.language}
+ distribution = {$plugin.meta.distribution}
+ rating = {$plugin.meta.rating}
+}
+# Set the language of meta tag language to German, when in German
+[globalVar = GP:L = 1]
+page.meta.language = de
+[global]

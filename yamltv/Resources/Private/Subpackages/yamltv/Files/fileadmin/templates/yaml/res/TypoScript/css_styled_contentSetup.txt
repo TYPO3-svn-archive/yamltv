@@ -1,0 +1,13 @@
+# Delete default CSS, because we take care about in our own styelesheet!
+plugin.tx_cssstyledcontent {
+  _CSS_DEFAULT_STYLE >
+}
+# remove the DIV-tag around headlines and csc-firstHeader from Hx-tags
+lib.stdheader {
+  stdWrap.dataWrap =
+  10.1.fontTag = <h1{register:headerStyle}>|</h1>
+  10.2.fontTag = <h2{register:headerStyle}>|</h2>
+  10.3.fontTag = <h3{register:headerStyle}>|</h3>
+  10.4.fontTag = <h4{register:headerStyle}>|</h4>
+  10.5.fontTag = <h5{register:headerStyle}>|</h5>
+}
