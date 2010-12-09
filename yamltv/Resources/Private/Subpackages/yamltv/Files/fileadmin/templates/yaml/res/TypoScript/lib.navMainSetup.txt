@@ -1,5 +1,5 @@
 #################################
-# Last Changed: 01.12.2010
+# Last Changed: 09.12.2010
 # ToDo:
 #################################
 lib.navMain = COA
@@ -12,7 +12,7 @@ lib.navMain {
    excludeUidList = {$template-yaml.mainNavigationExcludeList}
    1 = TMENU
    1 {
-#    accessKey = 1
+    accessKey = 1
     noBlur = 1
     NO = 1
     NO.ATagTitle.field = subtitle
@@ -61,10 +61,12 @@ lib.navMain {
   }
   wrap = <div class="hlist"><ul> | </ul></div>
  }
- wrap = <div id="nav"><div class="page_margins"><div class="page"> | </div></div></div>
+ wrap = <div id="nav"><div class="page_margins"><div class="page">|</div></div></div>
 }
 [global]
 [globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}]
-lib.navMain.10.10.1.NO.linkWrap = |<span></span>
-lib.navMain.10.10.1.ACT.linkWrap = |<span></span>
+lib.navMain.10.10.1.NO.allWrap = <li>|</li>
+lib.navMain.10.10.1.NO.linkWrap >
+lib.navMain.10.10.1.ACT.allWrap = <li class="active">|</li>
+lib.navMain.10.10.1.ACT.linkWrap >
 [global]
