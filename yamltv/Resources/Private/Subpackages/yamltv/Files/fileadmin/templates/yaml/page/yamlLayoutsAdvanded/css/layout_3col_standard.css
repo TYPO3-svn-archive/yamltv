@@ -8,5 +8,6 @@
 @import url(screen/basemod_3col.css);
 @import url(screen/basemod_equal_heights.css);
 @import url(../../../css-shared/content.css);
+@import url(../../../css-shared/overlay.css);
 /* import print layout | Druck-Layout einbinden */
 @import url(../../../css-shared/print_003.css);
