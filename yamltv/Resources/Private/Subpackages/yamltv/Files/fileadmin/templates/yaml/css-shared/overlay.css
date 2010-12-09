@@ -1,3 +1,11 @@
-/* "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com) */ 
+/* "Templates for TemplaVoila reloaded" v1.0 (c) by Dieter Bunkerd (http://typo3-asia.com)
+ * This file exists only to keep the function alive which is provided by the color choser at install time.
+ * I did'nt want to simply remove it, because it is a nice feature,
+ * but content.css is simply too complex to let that script edit the colors automatically.  
+ * For production sites however, you should NOT import this, but rather edit the "real" .css files.  
+ */ 
 #header{background:#182E7A}
 a{color:#182E7A}
+a:visited{color:#182E7A}
+#page2 #main .page_margins .page{background-color:#182E7A}
+p.gettingStartedStepThree a{background-color:#182E7A}
