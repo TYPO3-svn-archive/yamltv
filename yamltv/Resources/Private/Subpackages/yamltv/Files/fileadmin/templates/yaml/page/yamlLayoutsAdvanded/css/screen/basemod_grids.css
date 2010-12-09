@@ -39,16 +39,17 @@ body{text-align:center}
 .hlist ul li.last{border-right:1px #ccc solid}
 .hlist ul li a,
 .hlist ul li strong{width:auto;display:block;border-left:1px #ccc solid;color:#000;font-weight:normal;margin:0 5px 0 0;padding:0.5em 0 0.5em 0.5em}
-.hlist ul li.active a{padding:0 0 0.5em 0.5em;color:#aaa}
+.hlist ul li.active a{padding:0 0 0.5em 0.5em;color:#fff}
+.hlist ul li.active a:hover{color:#888}
 .hlist ul li span{font-size:90%}
 .hlist ul li.active strong{padding:0.5em 0 0 0.5em}
 .hlist ul li a span{display:block;color:#888}
-.hlist ul li strong span{display:block;color:#aaa}
+.hlist ul li strong span{display:block;color:#888}
 .hlist ul li a:focus,
 .hlist ul li a:hover,
 .hlist ul li a:active{background:#444;color:#fff}
 .hlist ul li.active{background:transparent;border:0 none}
-.hlist ul li.active strong{background:#800;color:#fff;font-weight:normal}
+.hlist ul li.active strong{background:#182E7A;color:#fff;font-weight:normal}
 #header h1{font-weight:bold;font-size:2.5em;letter-spacing:-1px;line-height:65%;color:#000}
 #header span{color:#99c}
 #topnav a{color:#fff;font-weight:normal;background:transparent;text-decoration:none}
