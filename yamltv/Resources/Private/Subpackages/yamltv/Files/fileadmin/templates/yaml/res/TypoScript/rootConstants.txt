@@ -75,13 +75,15 @@ template-yaml {
 # cat=template-yaml/enable/h; type=options[No=0,Yes=1]; label=Use JavaScript Jump-Menu?:Set to yes if want a JavaScript Jump-Menu instead of a standard list-menu. IMPORTANT: At the moment this a proof of concept only. It does not work with realURL for the time beeing. If you want to use it, you should modify it.
  useJumpMenuInsteadOfVlist = 0
 # cat=template-yaml/enable/i; type=options[No=0,Yes=1]; label=Show search box?:If set, a search box is show BELOW the menu. If you need it ABOVE, you only need to modify the point where it is copied to (menu_configuration > lib.navSub)
- useSearchBox = 1
+ useSearchBox = 0
 # cat=template-yaml/enable/b; type=string; label=Top navigation inclusion:What pages to show in the top navigation additionally to the login page? Use a comma-separated list of UIDs (e.g. 1,2,3)
  topNavigationIncludeList = 47,80,81
 # cat=template-yaml/enable/c; type=string; label=Main navigation exclusion:What pages to exclude from the main navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
  mainNavigationExcludeList =
 # cat=template-yaml/enable/d; type=string; label=Sub navigation exclusion:What pages to exclude from the sub navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
- subNavigationExcludeList = 
+ subNavigationExcludeList =
+# cat=template-yaml/enable/j; type=options[No=0,Yes=1]; label=Use translations?:Set to yes if you have a multi-language site and need a language-switch. (See page_blocks_configuration -> lib.header.100 for further configuration)
+ useTranslations = 1
 }
 styles.content {
 # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
