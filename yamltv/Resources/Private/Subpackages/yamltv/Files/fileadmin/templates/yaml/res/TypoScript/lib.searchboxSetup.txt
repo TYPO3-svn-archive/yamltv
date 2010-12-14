@@ -1,13 +1,13 @@
 #################################
-# Last Changed: 01.12.2010
+# Last Changed: 14.12.2010
 # ToDo:
 #################################
-[globalVar = LIT:1 = {$template-yaml.useSearchBox}]
 lib.searchbox = COA
 # Make the searchbox remember the search term on the search result page
-[globalVar = TSFE:id = 47]
+[globalVar = TSFE:id = {$plugin.tx_indexedsearch.searchpageID}]
 lib.searchbox = COA_INT
 [global]
+[globalVar = LIT:1 = {$template-yaml.useSearchBox}]
 lib.searchbox {
  10 = TEXT
  10 {
