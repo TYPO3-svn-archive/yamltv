@@ -58,6 +58,6 @@ lib.header.100 {
    noLink = 1
   }
  }
- wrap = <div id="langMenu"><ul>|</ul></div
+ wrap = <div id="langMenu"><ul>|</ul></div>
 }
 [global]
