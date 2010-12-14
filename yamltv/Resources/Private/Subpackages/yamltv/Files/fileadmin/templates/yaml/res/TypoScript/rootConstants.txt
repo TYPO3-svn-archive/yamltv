@@ -64,26 +64,28 @@ plugin.meta {
  rating = General	
 }
 template-yaml {
-# cat=template-yaml/enable/a; type=int+; label= loginpageID: UID of the customer login page.
- loginpageID = 42
-# cat=template-yaml/enable/e; type=options[No=0,Yes=1]; label=Use Fullpage-Layouts?:Set to yes if you are using one of the YAML Fullpage-Layouts
- useFullpageLayouts = 0
-# cat=template-yaml/enable/f; type=options[No=0,Yes=1]; label=Use Grid-Layouts?:Set to yes if you are using one of the YAML Grid-Layouts
+# cat=template-yaml/enable/a; type=options[No=0,Yes=1]; label=Use Grid-Layouts?:Set to Yes if you are using one of the YAML Grid-Layouts. (This is the default page-template after installation!)
  useGridLayouts = 1
-# cat=template-yaml/enable/g; type=options[No=0,Yes=1]; label=Use Fullheight-Layouts?:Set to yes if you are using one of the YAML Fullheight-Layouts
+# cat=template-yaml/enable/b; type=options[No=0,Yes=1]; label=Use Fullpage-Layouts?:Set to Yes if you are using one of the YAML Fullpage-Layouts.
+ useFullpageLayouts = 0
+# cat=template-yaml/enable/c; type=options[No=0,Yes=1]; label=Use Fullheight-Layouts?:Set to Yes if you are using one of the YAML Fullheight-Layouts.
  useFullheightLayouts = 0
-# cat=template-yaml/enable/h; type=options[No=0,Yes=1]; label=Use JavaScript Jump-Menu?:Set to yes if want a JavaScript Jump-Menu instead of a standard list-menu. IMPORTANT: At the moment this a proof of concept only. It does not work with realURL for the time beeing. If you want to use it, you should modify it.
+# cat=template-yaml/enable/d; type=options[No=0,Yes=1]; label=Use JavaScript Jump-Menu?:Set to Yes if want a JavaScript Jump-Menu instead of a standard list-menu. IMPORTANT: At the moment this a proof of concept only. It does not work with realURL for the time beeing. If you want to use it, you should modify it.
  useJumpMenuInsteadOfVlist = 0
-# cat=template-yaml/enable/i; type=options[No=0,Yes=1]; label=Show search box?:If set, a search box is show BELOW the menu. If you need it ABOVE, you only need to modify the point where it is copied to (menu_configuration > lib.navSub)
+# cat=template-yaml/enable/e; type=options[No=0,Yes=1]; label=Show search box?:Set to Yes in order to display a search box BELOW the menu. If you need it ABOVE, please modify the point where it is copied to (menu_configuration > lib.navSub).
  useSearchBox = 0
-# cat=template-yaml/enable/b; type=string; label=Top navigation inclusion:What pages to show in the top navigation additionally to the login page? Use a comma-separated list of UIDs (e.g. 1,2,3)
+# cat=template-yaml/enable/d; type=options[No=0,Yes=1]; label=Use translations?:Set to Yes if you need a language-switch for a multi language site. (See page_blocks_configuration -> lib.header.100 for further configuration)
+ useTranslations = 0
+# cat=template-yaml/other/a; type=int+; label= loginpageID: UID of the customer login page.
+ loginpageID = 42
+# cat=template-yaml/other/b; type=string; label=Top navigation inclusion:What pages to show in the top navigation additionally to the login page? Use a comma-separated list of UIDs (e.g. 1,2,3)
  topNavigationIncludeList = 47,80,81
-# cat=template-yaml/enable/c; type=string; label=Main navigation exclusion:What pages to exclude from the main navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+# cat=template-yaml/other/c; type=string; label=Main navigation exclusion:What pages to exclude from the main navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
  mainNavigationExcludeList =
-# cat=template-yaml/enable/d; type=string; label=Sub navigation exclusion:What pages to exclude from the sub navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
+# cat=template-yaml/other/d; type=string; label=Sub navigation exclusion:What pages to exclude from the sub navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
  subNavigationExcludeList =
-# cat=template-yaml/enable/j; type=options[No=0,Yes=1]; label=Use translations?:Set to yes if you have a multi-language site and need a language-switch. (See page_blocks_configuration -> lib.header.100 for further configuration)
- useTranslations = 1
+# cat=template-yaml/color/a; type=color; label=Background color of active flag:Set the color of the active language flag. (Only works if template-yaml.useTranslations is set to Yes!)
+ langMenuActBgColor = #FF9933
 }
 styles.content {
 # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
