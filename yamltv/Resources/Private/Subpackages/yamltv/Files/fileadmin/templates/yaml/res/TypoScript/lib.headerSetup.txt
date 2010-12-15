@@ -1,10 +1,10 @@
 #################################
-# Last changed: 14.12.2010
+# Last changed: 15.12.2010
 # ToDo:
 #################################
 lib.header = COA
 lib.header {
- 10 < lib.topNavigation
+ 10 =< lib.topNavigation
  10.wrap = <div id="topnav">|</div>
  20 = TEXT
  20 {
@@ -18,6 +18,7 @@ lib.header {
   insertData = 1
   wrap3 = <span>{|}</span>
  }
+ 40 =< lib.langMenu
  wrap = <div id="header">|</div>
 }
 [globalVar = LIT:1 = {$template-yaml.useFullpageLayouts}] || [globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
@@ -25,39 +26,4 @@ lib.header.wrap = <div id="header"><div class="page_margins"><div class="page">|
 [global]
 [globalVar = LIT:1 = {$template-yaml.useGridLayouts}]
 lib.header.10 >
-[global]
-[globalVar = LIT:1 = {$template-yaml.useTranslations}]
-lib.header.100 = HMENU
-lib.header.100 {
- special = language
- special.value = 0,1
- 1 = GMENU
- 1 {
-  noBlur = 1
-  NO {
-   XY = [5.w], [5.h]
-   5 = IMAGE
-   5.file = media/flags/flag_uk.gif || media/flags/flag_de.gif
-   5.offset = 0,0
-   allWrap = <li>|</li>
-   ATagParams = title="English" || title="Deutsch"
-  }
-  ACT < .NO
-  ACT = 1
-  ACT {
-   XY = [5.w]+2, [5.h]+2
-   backColor = #FF9933
-   5.offset = 1,1
-  }
-  USERDEF1 < .NO
-  USERDEF1 = 1
-  USERDEF1 {
-   XY = [5.w], [5.h]
-   5.file = media/flags/flag_uk_d.gif || media/flags/flag_de_d.gif
-   5.offset = 0,0
-   noLink = 1
-  }
- }
- wrap = <div id="langMenu"><ul>|</ul></div>
-}
 [global]

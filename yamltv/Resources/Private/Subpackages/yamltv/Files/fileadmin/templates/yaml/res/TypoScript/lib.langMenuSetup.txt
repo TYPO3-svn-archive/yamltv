@@ -1,0 +1,39 @@
+[globalVar = LIT:1 = {$template-yaml.useTranslations}]
+lib.langMenu = COA
+lib.langMenu {
+ 10 = HMENU
+ 10 {
+  special = language
+  special.value = 0,1
+  1 = GMENU
+  1 {
+   noBlur = 1
+   NO = 1
+   NO {
+    XY = [5.w], [5.h]
+    5 = IMAGE
+    5.file = media/flags/flag_uk.gif || media/flags/flag_de.gif
+    5.offset = 0,0
+    allWrap = <li>|</li>
+    ATagParams = title="English" || title="Deutsch"
+   }
+   ACT < .NO
+   ACT = 1
+   ACT {
+    XY = [5.w]+2, [5.h]+2
+    backColor = {$template-yaml.langMenuActBgColor}
+    5.offset = 1,1
+   }
+   USERDEF1 < .NO
+   USERDEF1 = 1
+   USERDEF1 {
+    XY = [5.w], [5.h]
+    5.file = media/flags/flag_uk_d.gif || media/flags/flag_de_d.gif
+    5.offset = 0,0
+    noLink = 1
+   }
+  }
+ }
+ wrap = <div id="langMenu"><ul>|</ul></div>
+}
+[global]
