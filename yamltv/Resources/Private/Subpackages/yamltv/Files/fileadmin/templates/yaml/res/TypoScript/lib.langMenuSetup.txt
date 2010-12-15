@@ -1,3 +1,7 @@
+#################################
+# Last Changed: 15.12.2010
+# ToDo:
+#################################
 [globalVar = LIT:1 = {$template-yaml.useTranslations}]
 lib.langMenu = COA
 lib.langMenu {
@@ -10,27 +14,29 @@ lib.langMenu {
    noBlur = 1
    NO = 1
    NO {
-    XY = [5.w], [5.h]
-    5 = IMAGE
-    5.file = media/flags/flag_uk.gif || media/flags/flag_de.gif
-    5.offset = 0,0
+    XY = [10.w], [10.h]
+    10 = IMAGE
+    10.file = {$filepaths.flagfiles}us.gif || {$filepaths.flagfiles}de.gif
+    10.offset = 0,0
     allWrap = <li>|</li>
     ATagParams = title="English" || title="Deutsch"
    }
    ACT < .NO
    ACT = 1
    ACT {
-    XY = [5.w]+2, [5.h]+2
+    XY = [10.w]+2, [10.h]+2
     backColor = {$template-yaml.langMenuActBgColor}
-    5.offset = 1,1
+    10.offset = 1,1
    }
    USERDEF1 < .NO
    USERDEF1 = 1
    USERDEF1 {
-    XY = [5.w], [5.h]
-    5.file = media/flags/flag_uk_d.gif || media/flags/flag_de_d.gif
-    5.offset = 0,0
+    XY = [10.w], [10.h]
+    10.file = {$filepaths.flagfiles}us.gif || {$filepaths.flagfiles}de.gif
+    10.offset = 0,0
     noLink = 1
+    20 = EFFECT
+    20.value = gray
    }
   }
  }

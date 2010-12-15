@@ -17,8 +17,10 @@ filepaths {
  scripts = fileadmin/templates/scripts/
  # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
  extensiontemplates = fileadmin/templates/extensions/
- # cat=filepaths; type=string; label=HTML Templates for extensions: Location of the (X)HTML templates for extensions
+ # cat=filepaths; type=string; label=XML file with translations: Location of the locallang.xml file for translations
  languagefile = fileadmin/templates/yaml/lang/
+ # cat=filepaths; type=string; label=GIF files with the flags: Location of all available country flags
+ flagfiles = fileadmin/flags/
 }
 plugin.tt_news {
 # cat=plugin.tt_news; type=int+; label= pid_list: Comma separated list of folder id's containing which contain news records.
@@ -75,7 +77,7 @@ template-yaml {
 # cat=template-yaml/enable/e; type=options[No=0,Yes=1]; label=Show search box?:Set to Yes in order to display a search box BELOW the menu. If you need it ABOVE, please modify the point where it is copied to (menu_configuration > lib.navSub).
  useSearchBox = 0
 # cat=template-yaml/enable/d; type=options[No=0,Yes=1]; label=Use translations?:Set to Yes if you need a language-switch for a multi language site. (See page_blocks_configuration -> lib.header.100 for further configuration)
- useTranslations = 0
+ useTranslations = 1
 # cat=template-yaml/other/a; type=int+; label= loginpageID: UID of the customer login page.
  loginpageID = 42
 # cat=template-yaml/other/b; type=string; label=Top navigation inclusion:What pages to show in the top navigation additionally to the login page? Use a comma-separated list of UIDs (e.g. 1,2,3)
@@ -85,7 +87,7 @@ template-yaml {
 # cat=template-yaml/other/d; type=string; label=Sub navigation exclusion:What pages to exclude from the sub navigation? Use a comma-separated list of UIDs (e.g. 1,2,3)
  subNavigationExcludeList =
 # cat=template-yaml/color/a; type=color; label=Background color of active flag:Set the color of the active language flag. (Only works if template-yaml.useTranslations is set to Yes!)
- langMenuActBgColor = #FF9933
+ langMenuActBgColor = #FFFFFF
 }
 styles.content {
 # This defines the maximum width of images inserted in content records of type Images or Text-with-images.
