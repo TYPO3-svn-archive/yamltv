@@ -76,10 +76,10 @@ tbody tr:hover th[scope="row"],
 tbody tr:hover tbody th.sub{background:#f0e8e8}
 tbody tr:hover td{background:#fff8f8}
 table.contenttable{width:100%}
-#header #langMenu{position:absolute;bottom:18px;right:0}
+#header #langMenu{position:absolute;bottom:18px;right:5px}
 #header #langMenu ul{list-style:none;margin:0}
-#header #langMenu ul li{display:inline;margin:0 .3em 0 0}
-#header #langMenu ul li img{vertical-align:top}
+#header #langMenu ul li{display:inline;margin:0 0 0 4px}
+#header #langMenu ul li img{vertical-align:bottom}
 /* TYPO3 */
 /* default styles for extension "tx_cssstyledcontent" */
 /* Instead of markup text-pic-clear !! */
